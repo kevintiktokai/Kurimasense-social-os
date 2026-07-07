@@ -131,7 +131,7 @@ export function insight(p: InsightParams): string {
   const right = (p.align ?? "right") === "right";
   const zone = photo.textZone === "lower" ? "top:560px;" : "top:250px;";
   return slideRoot("feed", `
-  ${photoBase(p.photo, "lower")}
+  ${photoBase(p.photo, photo.textZone === "lower" ? "lower" : "strong")}
   ${frame({ slideNo: p.slideNo })}
   <div style="position:absolute;left:var(--margin);right:var(--margin);${zone}text-align:${right ? "right" : "left"};">
     <div class="t-eyebrow" style="color:var(--color-maize);">${inline(p.eyebrow)}</div>
@@ -232,7 +232,7 @@ export function caseStudy(p: CaseStudyParams): string {
     <div class="t-eyebrow" style="color:var(--color-maize);">${inline(p.eyebrow)}</div>
     <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.title, 102, 66)}px;margin-top:8px;">${inline(p.title)}</div>
     <div style="display:flex;gap:44px;margin-top:64px;">${stats}</div>
-    <div class="t-meta" style="color:var(--color-cream);opacity:0.75;margin-top:56px;">SOURCE — ${inline(p.source)}</div>
+    <div class="t-meta" style="color:var(--color-cream);margin-top:56px;display:inline-block;background:rgba(30,25,16,0.85);padding:16px 24px;">SOURCE — ${inline(p.source)}</div>
   </div>`);
 }
 

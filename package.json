@@ -7,6 +7,8 @@
   "scripts": {
     "tokens": "tsx scripts/build-tokens.ts",
     "phase1": "tsx scripts/phase1-proposal.ts",
+    "templates": "tsx scripts/render-templates.ts",
+    "qa": "tsx scripts/qa-selftest.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
