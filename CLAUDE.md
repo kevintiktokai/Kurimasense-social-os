@@ -41,8 +41,12 @@ npm run phase1      # renders the Phase 1 approval pack → outputs/_phase1/
 ## Visual system (derived from reference/)
 
 - Composition: full-bleed warm imagery, dark scrim, hairline rules top
-  (y=100) and bottom (y=h−100), brand top-left / handle top-right / site
-  bottom-left / slide № bottom-right, 96px side margins, film grain.
+  (y=100) and bottom (y=h−100), brand top-left / handle top-right / slide №
+  bottom-right, 96px side margins, film grain. NO web address on slides
+  (owner's instruction, 2026-07).
+- Photos: curated library in assets/photos/ with manifest (mood, tonality,
+  focal point, text zone). Templates respect textZone; bright photos get the
+  strong scrim automatically. The template owns ALL text.
 - Palette: maize `#E6CF55` (display type on photos), cream `#F2EDE3`
   (meta on dark), ink `#1E1910`, olive `#55603A`, earth `#8A6A4B`,
   clay `#C9B698`. `maizeDeep #8A7A1E` is the accent on light grounds.
@@ -70,7 +74,11 @@ content-os/
 - [x] Phase 1 — foundation: scaffold, tokens.json derived from reference/,
       tokens.css generator, grain generator, Chromium renderer, approval
       pack rendered (awaiting human approval of palette + type).
-- [ ] Phase 2 — slide archetype templates (blocked on Phase 1 approval)
+- [x] Phase 2 — 10 slide archetypes in engine/templates.ts (cover,
+      cover-reel, insight, listicle, comparison, case-study, question,
+      icon-row, hero, feature) + markup.ts inline accents/highlights +
+      deterministic fitDisplay sizing. Review set: npx tsx
+      scripts/render-templates.ts → outputs/_templates/.
 - [ ] Phase 3 — QA gate
 - [ ] Phase 4 — brief schema + render-from-brief
 - [ ] Phase 5 — content intelligence (voice, pillars, shows, data bank)

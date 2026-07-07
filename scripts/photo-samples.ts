@@ -24,7 +24,7 @@ function frame(slideNo: string): string {
   <div style="position:absolute;left:0;right:0;bottom:var(--rule-inset-y);border-top:var(--rule-width) solid var(--color-cream);"></div>
   <div class="t-meta" style="position:absolute;top:60px;left:var(--margin);color:var(--color-cream);">KURIMASENSE</div>
   <div class="t-meta" style="position:absolute;top:60px;right:var(--margin);color:var(--color-cream);">@KURIMASENSE</div>
-  <div class="t-meta" style="position:absolute;bottom:52px;left:var(--margin);color:var(--color-cream);">KURIMASENSE.VERCEL.APP</div>
+  
   <div class="t-meta" style="position:absolute;bottom:52px;right:var(--margin);color:var(--color-cream);">${slideNo}</div>`;
 }
 
