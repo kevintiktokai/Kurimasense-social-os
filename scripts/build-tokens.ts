@@ -50,6 +50,8 @@ for (const [role, t] of Object.entries<any>(tokens.type)) {
   css += `  --type-${r}-tracking: ${t.tracking};\n`;
   css += `  --type-${r}-case: ${t.case === "upper" ? "uppercase" : "none"};\n`;
 }
+css += `  --photo-filter: ${tokens.photo.filter};\n`;
+css += `  --photo-grade: ${tokens.photo.grade};\n`;
 css += `  --margin: ${tokens.layout.marginPx}px;\n`;
 css += `  --rule-inset-y: ${tokens.layout.ruleInsetYPx}px;\n`;
 css += `  --rule-width: ${tokens.layout.ruleWidthPx}px;\n`;

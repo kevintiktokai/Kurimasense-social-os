@@ -1,0 +1,60 @@
+{
+  "note": "Curated background photo library. All photos supplied by the brand owner (Unsplash). The template owns ALL text; photos are atmosphere only.",
+  "photos": [
+    {
+      "id": "ox-plough-storm",
+      "file": "ox-plough-storm.jpg",
+      "credit": "Saikiran Kesari / Unsplash",
+      "subject": "farmer ploughing red soil with two white oxen under a storm-lit sky",
+      "mood": "epic, urgent, land-preparation",
+      "tonality": "dark",
+      "focalPoint": "50% 62%",
+      "textZone": "upper",
+      "goodFor": ["cover", "hero", "question"]
+    },
+    {
+      "id": "tractor-maize",
+      "file": "tractor-maize.jpg",
+      "credit": "Chad Stembridge / Unsplash",
+      "subject": "vintage green tractor and baler beside a tall maize stand, brooding sky",
+      "mood": "mechanised, capable, mid-season",
+      "tonality": "mid",
+      "focalPoint": "42% 58%",
+      "textZone": "upper",
+      "goodFor": ["insight", "case-study", "listicle"]
+    },
+    {
+      "id": "farmer-portrait",
+      "file": "farmer-portrait.jpg",
+      "credit": "Lisa-Marie Thecki / Unsplash",
+      "subject": "young woman farmer in a straw hat leaning on a wooden rail, direct gaze",
+      "mood": "human, senior, operator",
+      "tonality": "light",
+      "focalPoint": "50% 30%",
+      "textZone": "lower",
+      "goodFor": ["cover", "question", "quote"]
+    },
+    {
+      "id": "greenhouse-tomatoes",
+      "file": "greenhouse-tomatoes.jpg",
+      "credit": "Markus Spiske / Unsplash",
+      "subject": "tomato rows inside a tunnel greenhouse, path receding to the door",
+      "mood": "horticulture, detail, husbandry",
+      "tonality": "light",
+      "focalPoint": "50% 55%",
+      "textZone": "lower",
+      "goodFor": ["insight", "listicle", "comparison"]
+    },
+    {
+      "id": "hoe-wetland",
+      "file": "hoe-wetland.jpg",
+      "credit": "Visual Karsa / Unsplash",
+      "subject": "farmer swinging a hoe over wet ground, mirror reflection in the water",
+      "mood": "labour, discipline, early-season",
+      "tonality": "mid",
+      "focalPoint": "55% 38%",
+      "textZone": "lower",
+      "goodFor": ["insight", "case-study", "cover-reel"]
+    }
+  ]
+}
