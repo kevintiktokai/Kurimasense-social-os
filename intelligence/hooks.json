@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "purpose": "Living, scored hook bank. Hooks are rated 0-5 on five axes (specificity, tension, clarity, relevance, voiceFit); score = sum (max 25). Hooks < 16 do not ship. `measure` re-scores from real saves/shares/sends. See guidelines/hook-archetypes.md.",
+    "updated": "2026-07-07",
+    "axes": ["specificity", "tension", "clarity", "relevance", "voiceFit"],
+    "shipThreshold": 16,
+    "statuses": ["draft", "live", "retired"]
+  },
+  "hooks": [
+    {
+      "id": "hook-thirsty-two-weeks",
+      "text": "Your field tells you it's thirsty *two weeks* too late.",
+      "archetype": "cost-of-inaction",
+      "pillar": "field-intelligence",
+      "show": "The Playbook",
+      "scores": { "specificity": 4, "tension": 5, "clarity": 5, "relevance": 5, "voiceFit": 5 },
+      "score": 24,
+      "status": "live",
+      "usedIn": ["2026-w28-stress-signals"],
+      "performance": { "saves": null, "shares": null, "sends": null, "rescored": null }
+    },
+    {
+      "id": "hook-three-checks-spray",
+      "text": "Three checks before you spend another dollar on inputs.",
+      "archetype": "numbered-promise",
+      "pillar": "field-intelligence",
+      "show": "The Playbook",
+      "scores": { "specificity": 4, "tension": 4, "clarity": 5, "relevance": 5, "voiceFit": 5 },
+      "score": 23,
+      "status": "live",
+      "usedIn": [],
+      "performance": { "saves": null, "shares": null, "sends": null, "rescored": null }
+    },
+    {
+      "id": "hook-canopy-warm-tell",
+      "text": "A stressed canopy runs warm before it wilts. Here's the tell.",
+      "archetype": "the-tell",
+      "pillar": "field-intelligence",
+      "show": "The Edge",
+      "scores": { "specificity": 5, "tension": 4, "clarity": 4, "relevance": 5, "voiceFit": 5 },
+      "score": 23,
+      "status": "live",
+      "usedIn": [],
+      "performance": { "saves": null, "shares": null, "sends": null, "rescored": null }
+    },
+    {
+      "id": "hook-20pc-never-plate",
+      "text": "About *one in five* cereals grown here never reaches a plate.",
+      "archetype": "stakes-number",
+      "pillar": "the-economics",
+      "show": "By The Numbers",
+      "dataRef": "phl-ssa-cereals-share",
+      "scores": { "specificity": 4, "tension": 5, "clarity": 4, "relevance": 5, "voiceFit": 4 },
+      "score": 22,
+      "status": "live",
+      "usedIn": [],
+      "performance": { "saves": null, "shares": null, "sends": null, "rescored": null }
+    },
+    {
+      "id": "hook-fertiliser-placed-blind",
+      "text": "More fertiliser isn't the problem. Placing it *blind* is.",
+      "archetype": "counter-intuitive",
+      "pillar": "ground-truth",
+      "show": "Myth vs Method",
+      "dataRef": "ssa-n-efficiency",
+      "scores": { "specificity": 4, "tension": 5, "clarity": 4, "relevance": 5, "voiceFit": 5 },
+      "score": 23,
+      "status": "live",
+      "usedIn": [],
+      "performance": { "saves": null, "shares": null, "sends": null, "rescored": null }
+    },
+    {
+      "id": "hook-which-block-first",
+      "text": "Which of your blocks would you check *first* this week?",
+      "archetype": "question-hook",
+      "pillar": "field-intelligence",
+      "show": "The Playbook",
+      "scores": { "specificity": 4, "tension": 3, "clarity": 5, "relevance": 5, "voiceFit": 5 },
+      "score": 22,
+      "status": "live",
+      "usedIn": ["2026-w28-stress-signals"],
+      "performance": { "saves": null, "shares": null, "sends": null, "rescored": null }
+    },
+    {
+      "id": "hook-green-can-lie",
+      "text": "\"Green means healthy.\" Not always — and here's when it lies.",
+      "archetype": "myth-bust",
+      "pillar": "ground-truth",
+      "show": "Myth vs Method",
+      "scores": { "specificity": 3, "tension": 4, "clarity": 4, "relevance": 5, "voiceFit": 5 },
+      "score": 21,
+      "status": "live",
+      "usedIn": [],
+      "performance": { "saves": null, "shares": null, "sends": null, "rescored": null }
+    },
+    {
+      "id": "hook-first-rains-confirm",
+      "text": "Before the first rains commit your seed — confirm these three.",
+      "archetype": "season-timely",
+      "pillar": "ground-truth",
+      "show": "Season Watch",
+      "scores": { "specificity": 4, "tension": 3, "clarity": 4, "relevance": 5, "voiceFit": 5 },
+      "score": 21,
+      "status": "live",
+      "usedIn": [],
+      "performance": { "saves": null, "shares": null, "sends": null, "rescored": null }
+    },
+    {
+      "id": "hook-one-number-per-field",
+      "text": "One number per field. That's the whole idea.",
+      "archetype": "counter-intuitive",
+      "pillar": "operator-lens",
+      "show": "Operator Lens",
+      "scores": { "specificity": 3, "tension": 3, "clarity": 5, "relevance": 4, "voiceFit": 5 },
+      "score": 20,
+      "status": "live",
+      "usedIn": [],
+      "performance": { "saves": null, "shares": null, "sends": null, "rescored": null }
+    },
+    {
+      "id": "hook-harvest-too-late-audit",
+      "text": "By harvest, the yield you lost was decided *months* ago.",
+      "archetype": "cost-of-inaction",
+      "pillar": "the-economics",
+      "show": "The Proof",
+      "scores": { "specificity": 3, "tension": 5, "clarity": 4, "relevance": 4, "voiceFit": 5 },
+      "score": 21,
+      "status": "live",
+      "usedIn": [],
+      "performance": { "saves": null, "shares": null, "sends": null, "rescored": null }
+    },
+    {
+      "id": "hook-satellite-sees-first",
+      "text": "The satellite sees the corner sliding a week before you walk past it.",
+      "archetype": "the-tell",
+      "pillar": "field-intelligence",
+      "show": "The Edge",
+      "dataRef": "remote-early-detection",
+      "scores": { "specificity": 4, "tension": 4, "clarity": 4, "relevance": 4, "voiceFit": 4 },
+      "score": 20,
+      "status": "live",
+      "usedIn": [],
+      "performance": { "saves": null, "shares": null, "sends": null, "rescored": null }
+    },
+    {
+      "id": "hook-drought-not-surprise",
+      "text": "The drought wasn't a surprise. Being unprepared for it was.",
+      "archetype": "counter-intuitive",
+      "pillar": "ground-truth",
+      "show": "Season Watch",
+      "dataRef": "zim-worst-drought-40yr",
+      "scores": { "specificity": 3, "tension": 4, "clarity": 4, "relevance": 5, "voiceFit": 4 },
+      "score": 20,
+      "status": "draft",
+      "usedIn": [],
+      "performance": { "saves": null, "shares": null, "sends": null, "rescored": null }
+    }
+  ]
+}

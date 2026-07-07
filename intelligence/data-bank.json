@@ -1,0 +1,483 @@
+{
+  "meta": {
+    "purpose": "The single source of truth for every number KurimaSense publishes. No stat reaches a slide or caption unless it lives here with a source and year. Law 5: never fabricate stats, results, testimonials or clients.",
+    "updated": "2026-07-07",
+    "rules": [
+      "Every datapoint has: value, statement, source, year, category, confidence.",
+      "confidence: 'high' = named institution primary data; 'medium' = peer-reviewed or reputable secondary; 'context' = directional/illustrative, cite as 'estimates suggest'.",
+      "When a stat is used, the source + year MUST appear on the slide (case-study source line) or in the first comment.",
+      "Ranges are kept as ranges. Do not present '30-40%' as a single invented figure.",
+      "Re-verify any datapoint older than 3 years before headline use; drought/price figures decay fastest."
+    ]
+  },
+  "datapoints": [
+    {
+      "id": "phl-ssa-cereals-share",
+      "category": "post-harvest-loss",
+      "value": "≈20.5%",
+      "statement": "About one-fifth of cereals produced in Sub-Saharan Africa is lost between production and consumption.",
+      "source": "FAO, via World Bank 'Missing Food' analysis",
+      "year": 2011,
+      "confidence": "high"
+    },
+    {
+      "id": "phl-ssa-food-share",
+      "category": "post-harvest-loss",
+      "value": "≈37%",
+      "statement": "As much as 37% of food produced in Sub-Saharan Africa is lost between production and consumption.",
+      "source": "FAO",
+      "year": 2011,
+      "confidence": "medium"
+    },
+    {
+      "id": "phl-ssa-value",
+      "category": "post-harvest-loss",
+      "value": "US$4 billion",
+      "statement": "Grain post-harvest losses across Sub-Saharan Africa were valued at around US$4 billion a year — enough to meet the annual food needs of over 40 million people.",
+      "source": "World Bank / FAO / NRI, 'Missing Food'",
+      "year": 2011,
+      "confidence": "high"
+    },
+    {
+      "id": "phl-storage-share",
+      "category": "post-harvest-loss",
+      "value": "10–12%",
+      "statement": "Storage and handling losses alone for cereals in Sub-Saharan Africa are estimated at 10–12%.",
+      "source": "APHLIS (African Postharvest Losses Information System)",
+      "year": 2022,
+      "confidence": "high"
+    },
+    {
+      "id": "phl-grain-7country-avg",
+      "category": "post-harvest-loss",
+      "value": "≈15.1%",
+      "statement": "Across Nigeria, Ghana, South Africa, Ethiopia, Tanzania, Kenya and Uganda, average grain post-harvest loss over five years was about 15.1%.",
+      "source": "APHLIS-derived regional review",
+      "year": 2022,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-maize-yield-smallholder",
+      "category": "zimbabwe-yields",
+      "value": "≈0.8 t/ha",
+      "statement": "Average smallholder maize yield in Zimbabwe is around 0.8 tonnes per hectare, against an achievable 1.4 t/ha — a productivity gap of nearly half.",
+      "source": "Frontiers in Sustainable Food Systems (Zimbabwe maize typology study)",
+      "year": 2025,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-maize-yield-regional-gap",
+      "category": "zimbabwe-yields",
+      "value": "1–2 t/ha",
+      "statement": "Zimbabwe's maize yields are among the lowest in the region, where averages range from 1 to 2 tonnes per hectare.",
+      "source": "Frontiers in Sustainable Food Systems",
+      "year": 2025,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-maize-semiarid",
+      "category": "zimbabwe-yields",
+      "value": "90–970 kg/ha (avg ≈355)",
+      "statement": "In semi-arid areas such as Marange, maize yields range from 90 to 970 kg/ha, averaging about 355 kg/ha — a fraction of potential.",
+      "source": "Discover Sustainability (Springer), Marange study",
+      "year": 2025,
+      "confidence": "medium"
+    },
+    {
+      "id": "precision-input-savings",
+      "category": "precision-ag-roi",
+      "value": "8–20% input savings",
+      "statement": "Precision technologies achieve average input savings of 8–20% and yield increases of 2–6% in systematic reviews.",
+      "source": "Agriculture (MDPI), systematic literature review of precision crop production economics",
+      "year": 2025,
+      "confidence": "medium"
+    },
+    {
+      "id": "precision-nitrogen-30",
+      "category": "precision-ag-roi",
+      "value": "−30% fertiliser, no yield loss",
+      "statement": "Precision nitrogen management in maize cut fertiliser use by up to 30% with no loss in yield.",
+      "source": "CIMMYT (International Maize and Wheat Improvement Center)",
+      "year": 2020,
+      "confidence": "high"
+    },
+    {
+      "id": "precision-vra-profit",
+      "category": "precision-ag-roi",
+      "value": "higher profit vs blanket",
+      "statement": "Variable-rate fertiliser application returned higher profits than blanket application in smallholder Sub-Saharan systems.",
+      "source": "Sustainability (MDPI), precision agriculture SSA systematic review",
+      "year": 2021,
+      "confidence": "medium"
+    },
+    {
+      "id": "remote-early-detection",
+      "category": "remote-sensing",
+      "value": "10–15 days earlier",
+      "statement": "Advanced vegetation and stress indices can flag crop stress 10–15 days earlier than conventional visual methods.",
+      "source": "Frontiers in Plant Science (hyperspectral stress detection framework)",
+      "year": 2025,
+      "confidence": "medium"
+    },
+    {
+      "id": "remote-pre-visual",
+      "category": "remote-sensing",
+      "value": "before visible symptoms",
+      "statement": "Vegetation indices and chlorophyll fluorescence detect water and nutrient stress before symptoms are visible to the eye.",
+      "source": "ScienceDirect, multi-dimensional optical remote sensing review",
+      "year": 2025,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-mobile-under10",
+      "category": "digital-adoption",
+      "value": "<10%",
+      "statement": "Fewer than 10% of African farmers currently have access to digital farming devices — the adoption runway is enormous.",
+      "source": "PMC review of digital agricultural service adoption (Ghana/SSA)",
+      "year": 2023,
+      "confidence": "medium"
+    },
+    {
+      "id": "gsma-agri-services",
+      "category": "digital-adoption",
+      "value": "437+ services",
+      "statement": "Over 437 digital agriculture services were tracked across the developing world, most in Sub-Saharan Africa.",
+      "source": "GSMA AgriTech",
+      "year": 2020,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-tobacco-export-2024",
+      "category": "zimbabwe-economy",
+      "value": "US$1.3 billion",
+      "statement": "Zimbabwe's tobacco export earnings hit a record US$1.3 billion in 2024, a second straight year above US$1 billion.",
+      "source": "Tobacco Industry and Marketing Board (TIMB), via Equity Axis",
+      "year": 2024,
+      "confidence": "high"
+    },
+    {
+      "id": "zim-tobacco-smallholder-share",
+      "category": "zimbabwe-economy",
+      "value": ">70%",
+      "statement": "More than 70% of Zimbabwe's tobacco is now produced by small-scale farmers, up from a handful of large estates in 2000.",
+      "source": "TIMB / sector reporting",
+      "year": 2024,
+      "confidence": "high"
+    },
+    {
+      "id": "zim-tobacco-export-share",
+      "category": "zimbabwe-economy",
+      "value": "≈30% of exports",
+      "statement": "Tobacco accounts for roughly 30% of Zimbabwe's total export earnings.",
+      "source": "Zim Advocate / TIMB",
+      "year": 2024,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-ag-employment",
+      "category": "zimbabwe-economy",
+      "value": "≈70% of population",
+      "statement": "Agriculture provides a livelihood for around 70% of Zimbabwe's population.",
+      "source": "Ministry of Foreign Affairs & International Trade (Zimbabwe)",
+      "year": 2023,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-ag-employment-ilo",
+      "category": "zimbabwe-economy",
+      "value": "≈52.5%",
+      "statement": "Agriculture accounts for about 52.5% of total employment in Zimbabwe.",
+      "source": "World Bank (modelled ILO estimate)",
+      "year": 2023,
+      "confidence": "high"
+    },
+    {
+      "id": "zim-drought-maize-drop",
+      "category": "climate-risk",
+      "value": "−60% to −65%",
+      "statement": "The 2023/24 El Niño drought cut Zimbabwe's maize harvest by roughly 60%, to around 635,000 tonnes from 1.5 million the season before.",
+      "source": "IFPRI / USDA / Milling MEA",
+      "year": 2024,
+      "confidence": "high"
+    },
+    {
+      "id": "zim-drought-hectares",
+      "category": "climate-risk",
+      "value": "900,000+ ha",
+      "statement": "Over 900,000 hectares of maize — half the 1.8 million planted — were devastated by the 2024 drought.",
+      "source": "Government of Zimbabwe (State of Disaster declaration)",
+      "year": 2024,
+      "confidence": "high"
+    },
+    {
+      "id": "zim-drought-foodinsecure",
+      "category": "climate-risk",
+      "value": "≈5.3–6 million people",
+      "statement": "More than 5.3 million Zimbabweans were projected to face food insecurity following the 2024 drought.",
+      "source": "World Food Programme",
+      "year": 2024,
+      "confidence": "high"
+    },
+    {
+      "id": "zim-worst-drought-40yr",
+      "category": "climate-risk",
+      "value": "worst in 40 years",
+      "statement": "The 2023/24 season was Zimbabwe's worst drought in 40 years, prompting a national State of Disaster.",
+      "source": "UNICEF Zimbabwe / OCHA",
+      "year": 2024,
+      "confidence": "high"
+    },
+    {
+      "id": "zim-cereal-deficit",
+      "category": "climate-risk",
+      "value": "≈2.2 million MT annual need",
+      "statement": "Zimbabwe needs about 2.2 million tonnes of cereal a year; 2024 domestic output fell far short, forcing large imports.",
+      "source": "FEWS NET / WFP",
+      "year": 2024,
+      "confidence": "high"
+    },
+    {
+      "id": "zim-irrigation-potential",
+      "category": "water-irrigation",
+      "value": "≈365,000 ha potential",
+      "statement": "Of roughly 365,000 ha suitable for irrigation in Zimbabwe, under half is equipped and only about 123,000 ha is actually irrigated.",
+      "source": "FAO AQUASTAT",
+      "year": 2022,
+      "confidence": "high"
+    },
+    {
+      "id": "zim-rainfed-regions",
+      "category": "water-irrigation",
+      "value": "≈80% of rural pop.",
+      "statement": "About 80% of Zimbabwe's rural population lives in Natural Regions III–V, where rainfall is erratic and dryland farming is a gamble.",
+      "source": "World Bank Climate-Smart Agriculture profile, Zimbabwe",
+      "year": 2018,
+      "confidence": "medium"
+    },
+    {
+      "id": "ssa-fertiliser-rate",
+      "category": "inputs",
+      "value": "≈22 kg/ha",
+      "statement": "Sub-Saharan Africa averages about 22 kg/ha of fertiliser — roughly a seventh of the world average of 146 kg/ha.",
+      "source": "World Bank",
+      "year": 2022,
+      "confidence": "high"
+    },
+    {
+      "id": "maize-nitrogen-need",
+      "category": "inputs",
+      "value": "up to 150 kg N/ha",
+      "statement": "Maize is a heavy nitrogen feeder, with strong yield responses up to 150 kg N/ha — far above what most smallholders apply.",
+      "source": "PMC, fertiliser response & nitrogen use efficiency in African smallholder maize",
+      "year": 2020,
+      "confidence": "medium"
+    },
+    {
+      "id": "within-field-variability",
+      "category": "remote-sensing",
+      "value": "sharp within-field variation",
+      "statement": "Crop performance varies sharply within a single field — from water stress, soil differences and uneven nutrient uptake — long before the eye notices.",
+      "source": "ScienceDirect, optical remote sensing for crop stress monitoring",
+      "year": 2025,
+      "confidence": "medium"
+    },
+    {
+      "id": "ssa-smallholder-count",
+      "category": "smallholder-context",
+      "value": "≈33 million farms",
+      "statement": "Sub-Saharan Africa has around 33 million smallholder farms — about 80% of all farms in the region.",
+      "source": "FAO / AfDB IDEV",
+      "year": 2022,
+      "confidence": "high"
+    },
+    {
+      "id": "ssa-smallholder-food-share",
+      "category": "smallholder-context",
+      "value": "up to ≈90% of food",
+      "statement": "Smallholders produce up to about 90% of the food supply in parts of Sub-Saharan Africa.",
+      "source": "FAO / Zero Carbon Analytics",
+      "year": 2021,
+      "confidence": "medium"
+    },
+    {
+      "id": "ssa-farm-size",
+      "category": "smallholder-context",
+      "value": "1–2 ha typical",
+      "statement": "The median crop farm across most of Sub-Saharan Africa is between one and two hectares.",
+      "source": "FAO subnational farm-size analysis / The Lancet Planetary Health",
+      "year": 2021,
+      "confidence": "high"
+    },
+    {
+      "id": "ssa-under5ha-calories",
+      "category": "smallholder-context",
+      "value": "≈50% of calories",
+      "statement": "Farms under five hectares produce around half of food calories in Sub-Saharan Africa; 5–15 ha farms add another 26%.",
+      "source": "FAO / The Lancet Planetary Health",
+      "year": 2021,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-ecocash-adults",
+      "category": "digital-adoption",
+      "value": "≈90% of adults",
+      "statement": "Around 90% of adult Zimbabweans use mobile money (led by EcoCash) — the digital rails to reach farmers already exist.",
+      "source": "University of Pretoria repository, EcoCash financial-inclusion study",
+      "year": 2021,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-informal-unbanked",
+      "category": "digital-adoption",
+      "value": "≈85% informal",
+      "statement": "About 85% of Zimbabwe's workers are informal and largely outside formal banking — mobile money is their financial system.",
+      "source": "SciELO SA, mobile money regulation & inclusion in Zimbabwe",
+      "year": 2021,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-cotton-collapse",
+      "category": "zimbabwe-economy",
+      "value": "−96% in 13 years",
+      "statement": "Zimbabwe's cotton output collapsed about 96%, from ~360,000 tonnes in 2011 to ~13,000 tonnes in 2024 — climate and contract failures compounding.",
+      "source": "The Africa Report / Equity Axis",
+      "year": 2024,
+      "confidence": "high"
+    },
+    {
+      "id": "zim-cotton-households",
+      "category": "zimbabwe-economy",
+      "value": ">400,000 households",
+      "statement": "Over 400,000 Zimbabwean households depend on cotton — a sector now in crisis, showing the cost of farming without resilience.",
+      "source": "Equity Axis / Global Press Journal",
+      "year": 2024,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-cotton-farmer-yield",
+      "category": "zimbabwe-economy",
+      "value": "3 bales vs 27",
+      "statement": "Some cotton farmers projected just three bales in 2024, against 27 the previous year — a personal-scale illustration of climate risk.",
+      "source": "Global Press Journal",
+      "year": 2024,
+      "confidence": "context"
+    },
+    {
+      "id": "world-farms-smallholder-share",
+      "category": "smallholder-context",
+      "value": "475M of 570M farms",
+      "statement": "Of about 570 million farms worldwide, roughly 475 million are smallholdings under two hectares.",
+      "source": "FAO / The Lancet Planetary Health",
+      "year": 2021,
+      "confidence": "high"
+    },
+    {
+      "id": "precision-yield-boost-context",
+      "category": "precision-ag-roi",
+      "value": "up to +300% (irrigation case)",
+      "statement": "Solar-powered smart irrigation in Kenya (SunCulture) reported yield increases up to 300% on a fraction of conventional water — an upper-bound case, not a norm.",
+      "source": "Food Business MEA",
+      "year": 2024,
+      "confidence": "context"
+    },
+    {
+      "id": "ssa-n-efficiency",
+      "category": "inputs",
+      "value": "≈1/3 world N efficiency",
+      "statement": "Nitrogen-use efficiency in Sub-Saharan maize is about a third of the world average — the same fertiliser buys far less yield when placed blind.",
+      "source": "PMC, nitrogen use efficiency in African smallholder maize",
+      "year": 2020,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-arable-land",
+      "category": "zimbabwe-economy",
+      "value": ">4 million ha arable",
+      "statement": "Zimbabwe has over 4 million hectares of arable land, roughly a quarter of it worked with animal or manual draught power.",
+      "source": "US Dept. of Commerce, Zimbabwe agricultural sectors guide",
+      "year": 2023,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-smallholder-irrigation",
+      "category": "water-irrigation",
+      "value": "≈13,200 ha",
+      "statement": "Only about 13,200 ha is under smallholder irrigation in Zimbabwe — the overwhelming majority of small farms are rain-dependent.",
+      "source": "FAO",
+      "year": 2022,
+      "confidence": "medium"
+    },
+    {
+      "id": "precision-roi-range",
+      "category": "precision-ag-roi",
+      "value": "5–15% ROI",
+      "statement": "Reported return on investment for precision technologies typically ranges 5–15%, rising with how well decisions are targeted.",
+      "source": "Agriculture (MDPI) economic review",
+      "year": 2025,
+      "confidence": "medium"
+    },
+    {
+      "id": "gsma-digital-benefit-driver",
+      "category": "digital-adoption",
+      "value": "productivity + cost savings",
+      "statement": "Farmers adopt digital tools primarily for tangible gains — higher productivity, better information, and input cost savings — not novelty.",
+      "source": "Springer, mobile agricultural service applications review (SSA)",
+      "year": 2025,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-tobacco-2025-record",
+      "category": "zimbabwe-economy",
+      "value": "306M kg / US$1.03bn",
+      "statement": "By mid-2025 Zimbabwe had sold over 306 million kg of tobacco for about US$1.03 billion, at an average US$3.36/kg — a rebound from the drought year.",
+      "source": "TIMB, via Equity Axis",
+      "year": 2025,
+      "confidence": "high"
+    },
+    {
+      "id": "maize-nitrogen-good-yield",
+      "category": "inputs",
+      "value": "≈100 kg N/ha",
+      "statement": "Maize typically needs on the order of 100 kg of nitrogen per hectare for good yields — several times the regional average application.",
+      "source": "PMC, fertiliser response in African smallholder maize",
+      "year": 2020,
+      "confidence": "medium"
+    },
+    {
+      "id": "phl-fruit-veg-higher",
+      "category": "post-harvest-loss",
+      "value": "higher for perishables",
+      "statement": "Perishable fruit and vegetables suffer far higher post-harvest losses than cereals, concentrating risk in horticulture value chains.",
+      "source": "PMC review, food loss and waste in Sub-Saharan Africa",
+      "year": 2017,
+      "confidence": "medium"
+    },
+    {
+      "id": "zim-drought-frequency",
+      "category": "climate-risk",
+      "value": "recurring El Niño cycle",
+      "statement": "Southern Africa's maize belt is exposed to a recurring El Niño drought cycle — the 2024 event was severe but not isolated, making resilience a standing requirement.",
+      "source": "IFPRI",
+      "year": 2024,
+      "confidence": "medium"
+    },
+    {
+      "id": "sa-precision-adoption-survey",
+      "category": "precision-ag-roi",
+      "value": "growing adoption (SA)",
+      "statement": "A national South African survey shows precision-agriculture adoption climbing among commercial grain farmers — the technology curve nearest to Zimbabwe's commercial sector.",
+      "source": "SA Grain magazine, national precision-ag survey",
+      "year": 2025,
+      "confidence": "medium"
+    },
+    {
+      "id": "remote-classification-accuracy",
+      "category": "remote-sensing",
+      "value": "up to ≈98% classification",
+      "statement": "NDVI combined with deep learning has reached crop-health classification accuracy near 98% in recent studies — the analytical layer behind a reliable field score.",
+      "source": "arXiv / ResearchGate, NDVI + neural network crop health classification",
+      "year": 2025,
+      "confidence": "medium"
+    }
+  ]
+}

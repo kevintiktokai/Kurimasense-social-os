@@ -38,6 +38,7 @@ npm run typecheck   # tsc --noEmit (must be clean before any phase is done)
 npm run templates   # render all archetype samples → outputs/_templates/
 npm run qa          # QA self-test: 10 samples must PASS, bad fixture must FAIL
 npm run brief -- <id>   # render briefs/<id>.json → outputs/<id>/ review bundle
+npm run intel       # validate data bank (50+ sourced) + hook bank against laws
 ```
 
 ## The loop (so far)
@@ -92,7 +93,11 @@ content-os/
       font/colour, logo. Self-test with mandatory-fail fixture: npm run qa.
 - [x] Phase 4 — brief schema + render-from-brief (engine/brief.ts,
       npm run brief -- <id>); first brief: briefs/2026-w28-stress-signals.json
-- [ ] Phase 5 — content intelligence (voice, pillars, shows, data bank)
+- [x] Phase 5 — content intelligence: brand/voice.md, guidelines/{content-pillars,
+      carousel-arc,hook-archetypes,formats,market,compliance,design-rules}.md,
+      six named shows across 4 pillars, intelligence/data-bank.json (52
+      WEB-RESEARCHED sourced stats), intelligence/hooks.json (scored, living),
+      engine/intelligence.ts loader enforcing the laws (npm run intel).
 - [ ] Phase 6 — image layer (gpt-image-1 + deterministic placeholder)
 - [ ] Phase 7 — pipeline with human gate
 - [ ] Phase 8 — trend engine + week planner + Sunday research routine

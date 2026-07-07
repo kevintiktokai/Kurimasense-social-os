@@ -10,6 +10,7 @@
     "templates": "tsx scripts/render-templates.ts",
     "qa": "tsx scripts/qa-selftest.ts",
     "brief": "tsx scripts/run-brief.ts",
+    "intel": "tsx scripts/intel-check.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
