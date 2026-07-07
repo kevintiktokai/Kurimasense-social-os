@@ -1,0 +1,20 @@
+{
+  "name": "kurimasense-content-os",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Autonomous Instagram content operating system for KurimaSense",
+  "type": "module",
+  "scripts": {
+    "tokens": "tsx scripts/build-tokens.ts",
+    "phase1": "tsx scripts/phase1-proposal.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "playwright-core": "^1.49.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,82 @@
+# KurimaSense Content OS — Operating Manual
+
+Autonomous Instagram content system for KurimaSense (kurimasense.vercel.app):
+researches, ideates, writes, designs, QAs and packages content end-to-end,
+in-brand, with ONE human approval gate. NEVER auto-publishes.
+
+## Mission
+
+KurimaSense sells the end of farming on guesswork. Satellite field
+intelligence (KurimaScore, stress alerts, yield models) for Zimbabwean
+farmers — smallholder and commercial — plus the offtakers, lenders and
+insurers around them. Educator first, builder second. Direct, senior,
+evidence-led, anti-hype. British/SA spelling, USD, Zimbabwe furniture
+(seasons, crops, mukando, Agritex officers, market days). Never
+"bringing tech to Africa" saviour framing. Speak to one person.
+
+## Law (non-negotiable)
+
+1. **Brand by construction** — `brand/tokens.json` is the ONE swap file
+   (colours, gradients, type roles, fonts, formats, margins, texture).
+   `engine/tokens.css` is GENERATED from it (`npm run tokens`). Components
+   consume only `var(--…)`. Nothing hardcodes a colour or font. Fonts
+   self-hosted in `brand/fonts/` (embedded as data URIs at build).
+2. **Deterministic** — same brief → same output. Grain is seeded SVG
+   turbulence; placeholders are token gradients; no render-time randomness.
+3. **Human approval gate** — automated QA catches geometry; a human catches
+   taste. Approval happens before anything is queued. NEVER auto-publish.
+4. **Explainability** — every output ships a "why this works" note.
+5. **No fabricated numbers** — every stat comes from
+   `intelligence/data-bank.json` with source + year.
+6. **Secrets only in `.env`** (gitignored).
+
+## Commands
+
+```bash
+npm run tokens      # brand/tokens.json → engine/tokens.css
+npm run typecheck   # tsc --noEmit (must be clean before any phase is done)
+npm run phase1      # renders the Phase 1 approval pack → outputs/_phase1/
+```
+
+## Visual system (derived from reference/)
+
+- Composition: full-bleed warm imagery, dark scrim, hairline rules top
+  (y=100) and bottom (y=h−100), brand top-left / handle top-right / site
+  bottom-left / slide № bottom-right, 96px side margins, film grain.
+- Palette: maize `#E6CF55` (display type on photos), cream `#F2EDE3`
+  (meta on dark), ink `#1E1910`, olive `#55603A`, earth `#8A6A4B`,
+  clay `#C9B698`. `maizeDeep #8A7A1E` is the accent on light grounds.
+- Type: Playfair Display (display 500, italic accents, eyebrow italic) ·
+  Poppins (body 400, kicker/meta 600 caps). Roles + sizes in tokens.json.
+- Formats: feed 1080×1350, reel 1080×1920, rendered at 2x. Reel-safe zone =
+  centre 1080×1350.
+
+## Repo map
+
+```
+content-os/
+  reference/          5 inspiration slides the system is derived from
+  brand/tokens.json   THE swap file
+  brand/fonts/        self-hosted woff2 (OFL)
+  engine/render.ts    Chromium HTML→PNG (playwright-core, /opt/pw-browsers/chromium)
+  engine/texture.ts   deterministic seeded grain
+  engine/tokens.css   GENERATED — do not edit
+  scripts/            build-tokens, phase renders
+  outputs/            renders (gitignored)
+```
+
+## Build status
+
+- [x] Phase 1 — foundation: scaffold, tokens.json derived from reference/,
+      tokens.css generator, grain generator, Chromium renderer, approval
+      pack rendered (awaiting human approval of palette + type).
+- [ ] Phase 2 — slide archetype templates (blocked on Phase 1 approval)
+- [ ] Phase 3 — QA gate
+- [ ] Phase 4 — brief schema + render-from-brief
+- [ ] Phase 5 — content intelligence (voice, pillars, shows, data bank)
+- [ ] Phase 6 — image layer (gpt-image-1 + deterministic placeholder)
+- [ ] Phase 7 — pipeline with human gate
+- [ ] Phase 8 — trend engine + week planner + Sunday research routine
+- [ ] Phase 9 — dashboard (web/, Vercel, Supabase state)
+- [ ] Phase 10 — publishing (Supabase hosting, Buffer queue), repurposing,
+      learning report
