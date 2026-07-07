@@ -11,6 +11,9 @@
     "qa": "tsx scripts/qa-selftest.ts",
     "brief": "tsx scripts/run-brief.ts",
     "intel": "tsx scripts/intel-check.ts",
+    "scenes": "tsx scripts/scenes.ts",
+    "scenes:bake": "tsx scripts/scenes.ts bake",
+    "images": "tsx scripts/image-preview.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

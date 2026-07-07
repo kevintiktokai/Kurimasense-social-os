@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "purpose": "The photographic house style — the ONE swap file for how generated background imagery looks. engine/image.ts builds every gpt-image-1 prompt from this + a scene. Change the look here, not in code. Derived from reference/ (warm editorial 35mm) and pointed at Southern-African farming.",
+    "version": 1
+  },
+  "style": {
+    "medium": "documentary 35mm film photograph, editorial magazine quality",
+    "light": "warm golden-hour side light, sun-drenched, long soft shadows, gentle lens halation",
+    "palette": "muted earthy tones — olive and sage green, wheat and maize gold, warm cream, ochre, red-brown soil, deep shade; low saturation, film-faded",
+    "texture": "fine natural 35mm grain, subtle warmth, slightly faded highlights, no digital sharpness",
+    "lens": "50mm, shallow depth of field, intimate and unhurried framing",
+    "composition": "generous clean negative space for a headline, subject weighted to one side or low, calm horizon, nothing centred",
+    "mood": "grounded, dignified, quietly optimistic; the felt texture of working land at the best hour of the day"
+  },
+  "domain": "Southern African farming and nature — Zimbabwean smallholder and commercial fields, crops, soil, water, sky, and the working landscape",
+  "constraints": [
+    "no recognisable human faces and no identifiable individuals; if people appear, show them anonymously — from behind, hands only, distant, or silhouetted",
+    "no public figures",
+    "no text, letters, numbers, captions, watermarks or signatures anywhere in the image",
+    "no logos, brand marks, or identifiable machinery livery (no John Deere green, no branded bags)",
+    "no charts, graphs, maps, UI, or app screens",
+    "documentary dignity — never poverty-porn, never a saviour or charity framing, never staged distress",
+    "authentically Southern African — not US Midwest cornfields, not Asian rice paddies, not generic tropics"
+  ],
+  "negativePrompt": "text, words, letters, watermark, logo, brand name, human face, portrait, celebrity, chart, graph, map, user interface, cartoon, illustration, 3d render, oversaturated, HDR, plastic, poverty, distress",
+  "generation": {
+    "model": "gpt-image-1",
+    "size": "1024x1536",
+    "quality": "medium",
+    "note": "Portrait 2:3; templates cover-crop to 4:5 feed and 9:16 reel. Cached to assets/generated/<scene>.png so the same scene is byte-stable after first generation (Law 2)."
+  }
+}

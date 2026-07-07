@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "purpose": "Named generated background scenes. Each is a farming/nature backdrop in the reference mood (see brand/art-direction.json). Briefs reference a scene id exactly like a library photo; engine/image.ts generates it via gpt-image-1 (cached) or renders a deterministic on-palette placeholder when no API key is present. The template owns ALL text; scenes are atmosphere only.",
+    "idPrefix": "scene-"
+  },
+  "scenes": [
+    {
+      "id": "scene-maize-goldenhour",
+      "subject": "a tall green maize field at golden hour, low sun raking through the leaves, a calm sky above, no people",
+      "mood": "abundant, mid-season, hopeful",
+      "tonality": "mid",
+      "focalPoint": "50% 60%",
+      "textZone": "upper",
+      "goodFor": ["cover", "insight", "hero", "question"]
+    },
+    {
+      "id": "scene-red-soil-hands",
+      "subject": "close-up of anonymous weathered hands crumbling rich red-brown tilled soil, warm side light, shallow depth of field",
+      "mood": "tactile, grounded, husbandry",
+      "tonality": "mid",
+      "focalPoint": "50% 55%",
+      "textZone": "upper",
+      "goodFor": ["insight", "case-study", "listicle"]
+    },
+    {
+      "id": "scene-seedlings-rows",
+      "subject": "neat rows of young green maize seedlings emerging from dark soil, soft morning light, receding to a low horizon, no people",
+      "mood": "beginning, order, potential",
+      "tonality": "light",
+      "focalPoint": "50% 62%",
+      "textZone": "lower",
+      "goodFor": ["cover", "listicle", "comparison", "feature"]
+    },
+    {
+      "id": "scene-storm-sky-field",
+      "subject": "a dramatic dark storm sky building over a maize field, a shaft of warm light on the crop below, tension in the weather, no people",
+      "mood": "risk, weather, urgency",
+      "tonality": "dark",
+      "focalPoint": "50% 70%",
+      "textZone": "upper",
+      "goodFor": ["cover", "hero", "question", "case-study"]
+    },
+    {
+      "id": "scene-irrigation-dawn",
+      "subject": "an arc of irrigation water catching first light over a green field at dawn, mist rising, cool-to-warm gradient, no people",
+      "mood": "water, care, timing",
+      "tonality": "mid",
+      "focalPoint": "50% 55%",
+      "textZone": "lower",
+      "goodFor": ["insight", "feature", "hero"]
+    },
+    {
+      "id": "scene-dry-cracked-earth",
+      "subject": "cracked dry earth in warm light with a single small green shoot pushing through, shallow depth of field, no people",
+      "mood": "drought, resilience, stakes",
+      "tonality": "mid",
+      "focalPoint": "50% 60%",
+      "textZone": "upper",
+      "goodFor": ["case-study", "insight", "question"]
+    },
+    {
+      "id": "scene-harvest-cobs",
+      "subject": "anonymous hands cradling freshly harvested maize cobs, warm golden light, out-of-focus field behind, no faces",
+      "mood": "yield, reward, proof",
+      "tonality": "mid",
+      "focalPoint": "50% 55%",
+      "textZone": "lower",
+      "goodFor": ["case-study", "hero", "comparison"]
+    },
+    {
+      "id": "scene-contour-fields-aerial",
+      "subject": "a high aerial view of contoured farmland, curved ridges and green-gold field patches like an abstract quilt, warm light, no people",
+      "mood": "systems, overview, precision",
+      "tonality": "mid",
+      "focalPoint": "50% 50%",
+      "textZone": "upper",
+      "goodFor": ["feature", "icon-row", "insight", "cover"]
+    },
+    {
+      "id": "scene-msasa-field-edge",
+      "subject": "the edge of a farmed field meeting warm-toned msasa woodland at golden hour, Southern African savanna light, no people",
+      "mood": "place, belonging, Zimbabwe",
+      "tonality": "mid",
+      "focalPoint": "50% 58%",
+      "textZone": "upper",
+      "goodFor": ["cover", "hero", "question"]
+    },
+    {
+      "id": "scene-veg-garden-morning",
+      "subject": "a lush smallholder vegetable garden in soft morning light, leafy rows and a watering can, dew on the leaves, no people",
+      "mood": "horticulture, diligence, detail",
+      "tonality": "light",
+      "focalPoint": "50% 58%",
+      "textZone": "lower",
+      "goodFor": ["listicle", "insight", "feature", "comparison"]
+    },
+    {
+      "id": "scene-tobacco-barn-dusk",
+      "subject": "a rural curing barn beside a field at warm dusk, smoke and soft haze, long shadows, Southern African farmstead, no people",
+      "mood": "cash crop, labour, season",
+      "tonality": "dark",
+      "focalPoint": "50% 55%",
+      "textZone": "upper",
+      "goodFor": ["case-study", "hero", "cover"]
+    },
+    {
+      "id": "scene-soil-texture-macro",
+      "subject": "an abstract macro of warm crumbly loam soil with fine grain and shallow focus, earthy ochre and brown tones, no people",
+      "mood": "foundation, abstract, calm",
+      "tonality": "dark",
+      "focalPoint": "50% 50%",
+      "textZone": "upper",
+      "goodFor": ["cover-reel", "hero", "question", "icon-row"]
+    }
+  ]
+}

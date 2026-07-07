@@ -39,6 +39,9 @@ npm run templates   # render all archetype samples → outputs/_templates/
 npm run qa          # QA self-test: 10 samples must PASS, bad fixture must FAIL
 npm run brief -- <id>   # render briefs/<id>.json → outputs/<id>/ review bundle
 npm run intel       # validate data bank (50+ sourced) + hook bank against laws
+npm run scenes      # list generated background scenes + bake state
+npm run scenes:bake # generate scenes via gpt-image-1 (needs OPENAI_API_KEY)
+npm run images      # render sample slides on generated scenes (preview)
 ```
 
 ## The loop (so far)
@@ -98,7 +101,13 @@ content-os/
       six named shows across 4 pillars, intelligence/data-bank.json (52
       WEB-RESEARCHED sourced stats), intelligence/hooks.json (scored, living),
       engine/intelligence.ts loader enforcing the laws (npm run intel).
-- [ ] Phase 6 — image layer (gpt-image-1 + deterministic placeholder)
+- [x] Phase 6 — image layer: brand/art-direction.json (photographic house
+      style swap file, reference mood + farming domain), assets/generated/
+      scenes.json (12 named farming/nature scenes), engine/image.ts (gpt-image-1
+      generation cached by scene, deterministic on-palette placeholder when no
+      key, brand-safety lint), scenes resolve through photo.ts exactly like
+      library photos. Preview: npm run images. Bake: npm run scenes:bake
+      (needs OPENAI_API_KEY in .env).
 - [ ] Phase 7 — pipeline with human gate
 - [ ] Phase 8 — trend engine + week planner + Sunday research routine
 - [ ] Phase 9 — dashboard (web/, Vercel, Supabase state)

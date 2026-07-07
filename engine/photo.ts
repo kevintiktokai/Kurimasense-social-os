@@ -1,16 +1,21 @@
 /**
- * photo.ts — background photo layer.
+ * photo.ts — background image layer.
  *
- * Photos come from the curated library in assets/photos/ (manifest:
- * photos.json). The template owns ALL text — photos are atmosphere only.
- * Each photo is embedded as a data URI (self-contained document), graded
- * warm via token-driven CSS filter, and darkened with a token scrim chosen
- * from the photo's tonality so maize-yellow type always has contrast.
- * Everything is deterministic: same photo id → same bytes in, same CSS out.
+ * A background is referenced by a single id that resolves to EITHER:
+ *   - a curated library photo (assets/photos/photos.json), or
+ *   - a generated scene (assets/generated/scenes.json → engine/image.ts:
+ *     gpt-image-1 when a key is present, deterministic placeholder otherwise).
+ *
+ * Templates and briefs don't care which — they pass an id. The template owns
+ * ALL text; images are atmosphere only. Each image is embedded as a data URI
+ * (self-contained document), graded warm via a token-driven CSS filter, and
+ * darkened with a token scrim chosen from tonality so maize type always has
+ * contrast. Same id → same bytes in, same CSS out.
  */
 import { readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { isScene, getScene, sceneDataUri } from "./image.ts";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const manifest = JSON.parse(
@@ -19,32 +24,49 @@ const manifest = JSON.parse(
 
 export interface Photo {
   id: string;
-  file: string;
-  credit: string;
+  file?: string;
+  credit?: string;
   subject: string;
   mood: string;
   tonality: "dark" | "mid" | "light";
   focalPoint: string;
   textZone: "upper" | "lower";
   goodFor: string[];
+  kind?: "library" | "generated";
 }
 
 export function listPhotos(): Photo[] {
   return manifest.photos;
 }
 
+/** Resolve id to background metadata, from the photo library OR the scene registry. */
 export function getPhoto(id: string): Photo {
   const p = manifest.photos.find((p: Photo) => p.id === id);
-  if (!p) {
-    throw new Error(
-      `Unknown photo id '${id}'. Known: ${manifest.photos.map((p: Photo) => p.id).join(", ")}`,
-    );
+  if (p) return { ...p, kind: "library" };
+  if (isScene(id)) {
+    const s = getScene(id);
+    return {
+      id: s.id,
+      subject: s.subject,
+      mood: s.mood,
+      tonality: s.tonality,
+      focalPoint: s.focalPoint,
+      textZone: s.textZone,
+      goodFor: s.goodFor,
+      kind: "generated",
+    };
   }
-  return p;
+  const known = [
+    ...manifest.photos.map((p: Photo) => p.id),
+    ...["(scenes: run npm run scenes to list)"],
+  ].join(", ");
+  throw new Error(`Unknown background id '${id}'. Known library photos: ${known}`);
 }
 
-function dataUri(file: string): string {
-  const buf = readFileSync(join(root, "assets", "photos", file));
+/** Data URI for a background id — library file or generated/placeholder scene. */
+function backgroundDataUri(photo: Photo): string {
+  if (photo.kind === "generated") return sceneDataUri(photo.id);
+  const buf = readFileSync(join(root, "assets", "photos", photo.file!));
   return `data:image/jpeg;base64,${buf.toString("base64")}`;
 }
 
@@ -76,7 +98,7 @@ export function photoLayers(
   const photo = getPhoto(photoId);
   const focal = opts.focalPoint ?? photo.focalPoint;
   return `
-  <img src="${dataUri(photo.file)}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:${focal};filter:var(--photo-filter);" alt=""/>
+  <img src="${backgroundDataUri(photo)}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:${focal};filter:var(--photo-filter);" alt=""/>
   <div style="position:absolute;inset:0;background:var(--photo-grade);"></div>
   <div style="position:absolute;inset:0;background:${scrimVar(photo, opts.scrim)};"></div>`;
 }
