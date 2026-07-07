@@ -23,6 +23,8 @@ const sharedCss = `
 .accent { font-family: var(--font-display); font-style: italic; }
 .hl { background: var(--color-maize); color: var(--color-ink); padding: var(--highlight-padding); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .hl .accent { color: var(--color-ink); }
+/* a highlight bar needs open leading or it swallows the line above */
+.t-display:has(.hl) { line-height: 1.16; }
 </style>`;
 
 export interface FrameOpts {
@@ -79,7 +81,7 @@ export interface CoverParams {
 /** 1 · cover — feed carousel opener. Text zone follows the photo manifest. */
 export function cover(p: CoverParams): string {
   const photo = getPhoto(p.photo);
-  const size = fitDisplay(p.title, 112);
+  const size = fitDisplay(p.title, 126);
   const zone =
     photo.textZone === "lower"
       ? `bottom:200px;`
@@ -89,7 +91,7 @@ export function cover(p: CoverParams): string {
   ${frame({ slideNo: p.slideNo ?? "SLIDE 01" })}
   <div style="position:absolute;left:var(--margin);right:var(--margin);${zone}">
     <div class="t-display" style="color:var(--color-maize);font-size:${size}px;">${inline(p.title)}</div>
-    ${p.kicker ? `<div class="t-kicker" style="color:var(--color-maize);margin-top:38px;max-width:780px;font-size:27px;">${inline(p.kicker)}</div>` : ""}
+    ${p.kicker ? `<div class="t-kicker" style="color:var(--color-maize);margin-top:40px;max-width:760px;font-size:24px;">${inline(p.kicker)}</div>` : ""}
   </div>
   ${p.arrow !== false && photo.textZone === "upper" ? handArrow("position:absolute;right:120px;top:150px;width:115px;height:145px;") : ""}`);
 }
@@ -102,13 +104,13 @@ export interface CoverReelParams {
 
 /** 2 · cover-reel — 1080×1920 with all content in the centre safe zone. */
 export function coverReel(p: CoverReelParams): string {
-  const size = fitDisplay(p.title, 104);
+  const size = fitDisplay(p.title, 120);
   return slideRoot("reel", `
   ${photoBase(p.photo, "strong")}
   ${frame({ reel: true })}
   <div style="position:absolute;left:var(--margin);right:var(--margin);top:${REEL_INSET + 250}px;">
     <div class="t-display" style="color:var(--color-maize);font-size:${size}px;">${inline(p.title)}</div>
-    ${p.kicker ? `<div class="t-kicker" style="color:var(--color-maize);margin-top:36px;max-width:760px;font-size:27px;">${inline(p.kicker)}</div>` : ""}
+    ${p.kicker ? `<div class="t-kicker" style="color:var(--color-maize);margin-top:38px;max-width:740px;font-size:24px;">${inline(p.kicker)}</div>` : ""}
   </div>
   <div class="t-meta" style="position:absolute;left:var(--margin);bottom:${REEL_INSET + 52}px;color:var(--color-cream);">WATCH — FULL BREAKDOWN</div>`);
 }
@@ -125,7 +127,7 @@ export interface InsightParams {
 /** 3 · insight — interior teaching slide (refs 2–5 composition). */
 export function insight(p: InsightParams): string {
   const photo = getPhoto(p.photo);
-  const size = fitDisplay(p.title, 104, 72);
+  const size = fitDisplay(p.title, 114, 72);
   const right = (p.align ?? "right") === "right";
   const zone = photo.textZone === "lower" ? "top:560px;" : "top:250px;";
   return slideRoot("feed", `
@@ -154,7 +156,7 @@ export function listicle(p: ListicleParams): string {
       <div class="t-eyebrow" style="color:var(--color-maize);min-width:86px;">${String(i + 1).padStart(2, "0")}</div>
       <div>
         <div class="t-display" style="color:var(--color-maize);font-size:52px;">${inline(it.label)}</div>
-        ${it.text ? `<div class="t-body" style="color:var(--color-cream);font-size:29px;margin-top:10px;max-width:720px;">${inline(it.text)}</div>` : ""}
+        ${it.text ? `<div class="t-body" style="color:var(--color-cream);font-size:27px;margin-top:10px;max-width:700px;">${inline(it.text)}</div>` : ""}
       </div>
     </div>`,
     )
@@ -163,7 +165,7 @@ export function listicle(p: ListicleParams): string {
   ${photoBase(p.photo, "strong")}
   ${frame({ slideNo: p.slideNo })}
   <div style="position:absolute;left:var(--margin);right:var(--margin);top:200px;">
-    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.title, 84, 60)}px;margin-bottom:44px;">${inline(p.title)}</div>
+    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.title, 96, 62)}px;margin-bottom:44px;">${inline(p.title)}</div>
     ${rows}
   </div>`);
 }
@@ -191,7 +193,7 @@ export function comparison(p: ComparisonParams): string {
   ${photoBase(p.photo, "strong")}
   ${frame({ slideNo: p.slideNo })}
   <div style="position:absolute;left:var(--margin);right:var(--margin);top:190px;">
-    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.title, 84, 60)}px;">${inline(p.title)}</div>
+    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.title, 96, 62)}px;">${inline(p.title)}</div>
     <div style="margin-top:44px;background:rgba(30,25,16,0.72);border:var(--rule-width) solid rgba(242,237,227,0.35);padding:44px 48px;">
       <div class="t-kicker" style="color:var(--color-cream);opacity:0.85;">${inline(p.bad.label)}</div>
       ${li(p.bad.items, "✕", "var(--color-cream)")}
@@ -228,7 +230,7 @@ export function caseStudy(p: CaseStudyParams): string {
   ${frame({ slideNo: p.slideNo })}
   <div style="position:absolute;left:var(--margin);right:var(--margin);top:230px;">
     <div class="t-eyebrow" style="color:var(--color-maize);">${inline(p.eyebrow)}</div>
-    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.title, 92, 64)}px;margin-top:8px;">${inline(p.title)}</div>
+    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.title, 102, 66)}px;margin-top:8px;">${inline(p.title)}</div>
     <div style="display:flex;gap:44px;margin-top:64px;">${stats}</div>
     <div class="t-meta" style="color:var(--color-cream);opacity:0.75;margin-top:56px;">SOURCE — ${inline(p.source)}</div>
   </div>`);
@@ -252,8 +254,8 @@ export function question(p: QuestionParams): string {
   ${photoBase(p.photo, "strong")}
   ${frame({ slideNo: p.slideNo })}
   <div style="position:absolute;left:var(--margin);right:var(--margin);top:0;bottom:0;display:flex;flex-direction:column;${anchor}align-items:center;text-align:center;">
-    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.question, 100, 68)}px;max-width:860px;">${inline(p.question)}</div>
-    <div class="t-kicker" style="margin-top:56px;background:var(--color-maize);color:var(--color-ink);padding:24px 44px;font-size:27px;">${inline(p.cta)}</div>
+    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.question, 112, 70)}px;max-width:860px;">${inline(p.question)}</div>
+    <div class="t-kicker" style="margin-top:56px;background:var(--color-maize);color:var(--color-ink);padding:24px 44px;font-size:24px;">${inline(p.cta)}</div>
   </div>`);
 }
 
@@ -289,7 +291,7 @@ export function iconRow(p: IconRowParams): string {
   ${photoBase(p.photo, "strong")}
   ${frame({ slideNo: p.slideNo })}
   <div style="position:absolute;left:var(--margin);right:var(--margin);top:230px;">
-    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.title, 88, 62)}px;">${inline(p.title)}</div>
+    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.title, 98, 64)}px;">${inline(p.title)}</div>
     <div style="display:flex;gap:40px;margin-top:70px;">${cols}</div>
   </div>`);
 }
@@ -308,7 +310,7 @@ export function hero(p: HeroParams): string {
   ${photoBase(p.photo)}
   ${frame({ slideNo: p.slideNo })}
   <div style="position:absolute;left:var(--margin);right:var(--margin);${zone}">
-    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.line, 120, 76)}px;max-width:860px;">${inline(p.line)}</div>
+    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.line, 134, 80)}px;max-width:860px;">${inline(p.line)}</div>
   </div>`);
 }
 
@@ -328,7 +330,7 @@ export function feature(p: FeatureParams): string {
   ${frame({ slideNo: p.slideNo })}
   <div style="position:absolute;left:var(--margin);right:var(--margin);top:210px;">
     <div class="t-eyebrow" style="color:var(--color-maize);">${inline(p.eyebrow)}</div>
-    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.title, 88, 62)}px;margin-top:8px;">${inline(p.title)}</div>
+    <div class="t-display" style="color:var(--color-maize);font-size:${fitDisplay(p.title, 98, 64)}px;margin-top:8px;">${inline(p.title)}</div>
   </div>
   <div style="position:absolute;left:var(--margin);right:var(--margin);bottom:200px;">
     <div style="background:rgba(30,25,16,0.88);border:var(--rule-width) solid rgba(242,237,227,0.4);padding:48px 52px;max-width:700px;">
