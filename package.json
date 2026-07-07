@@ -9,6 +9,7 @@
     "phase1": "tsx scripts/phase1-proposal.ts",
     "templates": "tsx scripts/render-templates.ts",
     "qa": "tsx scripts/qa-selftest.ts",
+    "brief": "tsx scripts/run-brief.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

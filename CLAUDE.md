@@ -35,8 +35,16 @@ evidence-led, anti-hype. British/SA spelling, USD, Zimbabwe furniture
 ```bash
 npm run tokens      # brand/tokens.json → engine/tokens.css
 npm run typecheck   # tsc --noEmit (must be clean before any phase is done)
-npm run phase1      # renders the Phase 1 approval pack → outputs/_phase1/
+npm run templates   # render all archetype samples → outputs/_templates/
+npm run qa          # QA self-test: 10 samples must PASS, bad fixture must FAIL
+npm run brief -- <id>   # render briefs/<id>.json → outputs/<id>/ review bundle
 ```
+
+## The loop (so far)
+
+brief json → render each slide → hard QA gate (engine/qa.ts) → review
+bundle (PNGs + caption.md + alt.txt + why.md + qa-report.json) → status
+draft→review → STOP. Approval is human-only; nothing publishes itself.
 
 ## Visual system (derived from reference/)
 
@@ -79,8 +87,11 @@ content-os/
       icon-row, hero, feature) + markup.ts inline accents/highlights +
       deterministic fitDisplay sizing. Review set: npx tsx
       scripts/render-templates.ts → outputs/_templates/.
-- [ ] Phase 3 — QA gate
-- [ ] Phase 4 — brief schema + render-from-brief
+- [x] Phase 3 — QA gate (engine/qa.ts): clip, overlap, highlight-lead,
+      pixel-measured contrast (4.5/3.0), min-size, reel-safe, brand
+      font/colour, logo. Self-test with mandatory-fail fixture: npm run qa.
+- [x] Phase 4 — brief schema + render-from-brief (engine/brief.ts,
+      npm run brief -- <id>); first brief: briefs/2026-w28-stress-signals.json
 - [ ] Phase 5 — content intelligence (voice, pillars, shows, data bank)
 - [ ] Phase 6 — image layer (gpt-image-1 + deterministic placeholder)
 - [ ] Phase 7 — pipeline with human gate

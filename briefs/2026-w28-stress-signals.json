@@ -1,0 +1,97 @@
+{
+  "id": "2026-w28-stress-signals",
+  "created": "2026-07-07",
+  "pillar": "field-intelligence",
+  "show": "The Playbook",
+  "hook": "your-field-tells-you-too-late",
+  "format": "carousel",
+  "slides": [
+    {
+      "template": "cover",
+      "params": {
+        "photo": "ox-plough-storm",
+        "title": "Your Field Tells You It's Thirsty *two weeks* Too Late.",
+        "kicker": "Three stress signals satellites catch before your eyes can — this season, not next.",
+        "slideNo": "SLIDE 01"
+      },
+      "alt_text": "A farmer ploughs red soil with two white oxen under a storm-lit sky. Large yellow serif text reads: Your Field Tells You It's Thirsty two weeks Too Late."
+    },
+    {
+      "template": "insight",
+      "params": {
+        "photo": "tractor-maize",
+        "eyebrow": "Signal 01",
+        "title": "Canopy\nCooling Lag.",
+        "body": "A water-stressed canopy warms before it wilts.\n\nSatellite thermal readings pick up that lag days before leaves curl — while irrigation can still save the stand.",
+        "slideNo": "SLIDE 02"
+      },
+      "alt_text": "A green tractor beside a tall maize stand under a brooding sky. Text explains Signal 01, canopy cooling lag: a water-stressed canopy warms before it wilts."
+    },
+    {
+      "template": "insight",
+      "params": {
+        "photo": "greenhouse-tomatoes",
+        "eyebrow": "Signal 02",
+        "title": "Vigour That\nStops Climbing.",
+        "body": "Healthy crop greens up week on week through the vegetative stage.\n\nWhen the growth curve flattens early, something is holding it back — water, nitrogen or roots.",
+        "slideNo": "SLIDE 03"
+      },
+      "alt_text": "Tomato rows inside a tunnel greenhouse. Text explains Signal 02, vigour that stops climbing: a flattening growth curve means something is holding the crop back."
+    },
+    {
+      "template": "insight",
+      "params": {
+        "photo": "hoe-wetland",
+        "eyebrow": "Signal 03",
+        "title": "One Corner\nSliding First.",
+        "body": "Stress almost never hits a field evenly.\n\nA patch map shows which corner is sliding while the rest holds — so you scout one hotspot, not twenty hectares.",
+        "slideNo": "SLIDE 04"
+      },
+      "alt_text": "A farmer swings a hoe over wet ground, reflected in the water. Text explains Signal 03, one corner sliding first: stress maps show which patch is slipping."
+    },
+    {
+      "template": "case-study",
+      "params": {
+        "photo": "ox-plough-storm",
+        "eyebrow": "By the numbers",
+        "title": "The Cost of Finding Out Late.",
+        "stats": [
+          {
+            "value": "30–40%",
+            "label": "of Sub-Saharan Africa's food production is lost between field and market"
+          },
+          {
+            "value": "$4bn+",
+            "label": "estimated annual value of those post-harvest losses"
+          }
+        ],
+        "source": "FAO / World Bank, 2023",
+        "slideNo": "SLIDE 05"
+      },
+      "alt_text": "A farmer ploughing with oxen at dusk. Two large statistics: 30 to 40 percent of Sub-Saharan Africa's food production is lost between field and market, worth over 4 billion dollars a year. Source FAO and World Bank, 2023."
+    },
+    {
+      "template": "question",
+      "params": {
+        "photo": "farmer-portrait",
+        "question": "Which of your blocks would you check *first* this week?",
+        "cta": "SAVE THIS — SEND IT TO YOUR AGRONOMIST",
+        "slideNo": "SLIDE 06"
+      },
+      "alt_text": "A young woman farmer in a straw hat leans on a wooden rail, looking ahead. Text asks: which of your blocks would you check first this week? A yellow banner says save this and send it to your agronomist."
+    }
+  ],
+  "caption": "Crop stress has a schedule. Your eyes are two weeks behind it.\n\nBy the time maize leaves curl, the yield damage is already done — the canopy warmed, the growth curve flattened, and one corner of the field had been sliding for days.\n\nThis is The Playbook: three signals worth watching between now and tasselling.\n\n1. Canopy cooling lag — stressed crop runs warm before it wilts.\n2. Vigour that stops climbing — a flat growth curve mid-vegetative is a fault, not a phase.\n3. One corner sliding first — stress is patchy; scout the hotspot, not the whole field.\n\nNone of this needs a drone or a walk through every row. It needs the habit of checking evidence before spending money.\n\nSave this for your next field walk.",
+  "first_comment": "Where do the numbers come from? The 30–40% post-harvest loss figure for Sub-Saharan Africa and the $4bn+ annual value are FAO / World Bank (2023) estimates. We never invent numbers — every stat we post carries its source.",
+  "hashtags": [
+    "#ZimAgriculture",
+    "#FarmingZimbabwe",
+    "#PrecisionAgriculture",
+    "#MaizeFarming",
+    "#AgriTechAfrica",
+    "#SmartFarming",
+    "#KurimaSense"
+  ],
+  "rationale": "Hook names a felt pain (finding out too late) with a concrete time cost (two weeks), in second person, no product mention until the profile. The arc teaches three checkable signals (value first), lands one sourced cost statistic for stakes, and closes on a question CTA engineered for saves and sends to an agronomist — the highest-trust referral path in Zimbabwean farming. 5 of 6 slides teach; product appears only as the frame mark. British spelling, USD figures, Zimbabwe furniture (blocks, scouting, tasselling).",
+  "status": "review"
+}
