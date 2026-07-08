@@ -10,57 +10,83 @@
       "template": "cover",
       "params": {
         "photo": "ox-plough-storm",
-        "title": "The Satellite Sees The Corner Sliding *A Week* Before You Walk Past It.",
-        "kicker": "Field intelligence for Zimbabwean farmers. The start of the end of farming on guesswork.",
+        "title": "This Is KurimaSense. The End Of Farming On *Guesswork*.",
+        "kicker": "Satellite field intelligence for Zimbabwean farmers. See what your crop is doing while you can still act on it.",
         "slideNo": "SLIDE 01"
       },
-      "alt_text": "A farmer ploughs red soil with two white oxen under a storm-lit sky. Large yellow serif text reads: The satellite sees the corner sliding a week before you walk past it."
+      "alt_text": "A farmer ploughs red soil with two white oxen under a storm-lit sky. Large yellow serif text reads: This is KurimaSense. The end of farming on guesswork."
     },
     {
       "template": "insight",
       "params": {
         "photo": "tractor-maize",
-        "eyebrow": "What the eye misses",
-        "title": "Stress Shows\nFrom Above First.",
-        "body": "A struggling crop changes how it reflects and radiates light long before a leaf ever curls.\n\nSatellite and sensor reads can flag that shift *10 to 15 days* before the symptom reaches your eye — while there is still a decision worth making.",
+        "eyebrow": "The problem",
+        "title": "Your Field Tells\nYou Too Late.",
+        "body": "By the time a leaf curls or a corner yellows, the yield decision is already made.\n\nGuesswork means finding out at the weighbridge — when nothing can be changed.",
         "slideNo": "SLIDE 02"
       },
-      "alt_text": "A green tractor beside a tall maize stand under a brooding sky. Text reads: stress shows from above first. A struggling crop changes how it reflects light 10 to 15 days before a leaf curls."
+      "alt_text": "A green tractor beside a tall maize stand under a brooding sky. Text reads: your field tells you too late. Guesswork means finding out at the weighbridge, when nothing can be changed."
     },
     {
       "template": "insight",
       "params": {
         "photo": "greenhouse-tomatoes",
-        "eyebrow": "Why one number won't do",
-        "title": "The Field Is\nNever Uniform.",
-        "body": "One block is holding. The corner by the road is already sliding. The average hides both.\n\nField intelligence reads the *variation* — so you scout the hotspot and leave the rest of the hectares alone.",
+        "eyebrow": "Why it happens",
+        "title": "One Guess For\nTwenty Hectares.",
+        "body": "Inputs spread evenly and hoped over. The sliding corner scouted on foot, after it shows.\n\nThe field is never uniform — guesswork treats it like it is.",
         "slideNo": "SLIDE 03"
       },
-      "alt_text": "Tomato rows inside a tunnel greenhouse. Text reads: the field is never uniform. Field intelligence reads the variation so you scout the hotspot, not every hectare."
+      "alt_text": "Tomato rows inside a tunnel greenhouse. Text reads: one guess for twenty hectares. The field is never uniform, but guesswork treats it like it is."
     },
     {
       "template": "insight",
       "params": {
         "photo": "hoe-wetland",
-        "eyebrow": "How we see it",
-        "title": "A Sharper Instrument.\nNot A Saviour.",
-        "body": "You already know your land. KurimaSense hands you one more instrument — evidence, early enough to act on.\n\nYou still make the call.",
+        "eyebrow": "The shift",
+        "title": "See It Early.\nAct While It Counts.",
+        "body": "Satellites read crop stress *10 to 15 days* before your eye can.\n\nThat head start is the difference between saving the stand and counting the loss.",
         "slideNo": "SLIDE 04"
       },
-      "alt_text": "A farmer swings a hoe over wet ground, reflected in the water. Text reads: a sharper instrument, not a saviour. KurimaSense hands you evidence early enough to act on. You still make the call."
+      "alt_text": "A farmer swings a hoe over wet ground, reflected in the water. Text reads: see it early, act while it counts. Satellites read crop stress 10 to 15 days before your eye can."
+    },
+    {
+      "template": "icon-row",
+      "params": {
+        "photo": "tractor-maize",
+        "title": "What KurimaSense Does.",
+        "items": [
+          {
+            "icon": "satellite",
+            "label": "Reads",
+            "text": "Every field from above, as the satellite passes over."
+          },
+          {
+            "icon": "alert",
+            "label": "Alerts",
+            "text": "A warning the moment a block starts to slip."
+          },
+          {
+            "icon": "chart",
+            "label": "Scores",
+            "text": "One honest number per field — the KurimaScore."
+          }
+        ],
+        "slideNo": "SLIDE 05"
+      },
+      "alt_text": "A green tractor beside a maize stand. Three columns explain what KurimaSense does: reads every field from above as the satellite passes; alerts you the moment a block starts to slip; scores each field with one honest number, the KurimaScore."
     },
     {
       "template": "question",
       "params": {
         "photo": "farmer-portrait",
-        "question": "How many times has a field told you *too late*?",
-        "cta": "FOLLOW FOR THE SERIES — WE START WITH THE STAKES",
-        "slideNo": "SLIDE 05"
+        "question": "Ready to stop *guessing* — and start seeing?",
+        "cta": "FOLLOW KURIMASENSE — THE STAKES COME NEXT",
+        "slideNo": "SLIDE 06"
       },
-      "alt_text": "A young woman farmer in a straw hat leans on a wooden rail, looking ahead. Text asks: how many times has a field told you too late? A yellow banner says follow for the series, we start with the stakes."
+      "alt_text": "A young woman farmer in a straw hat leans on a wooden rail, looking ahead. Text asks: ready to stop guessing and start seeing? A yellow banner says follow KurimaSense, the stakes come next."
     }
   ],
-  "caption": "This is KurimaSense. Field intelligence for the way farming actually works in Zimbabwe.\n\nEvery season carries the same quiet risk: the field is already in trouble, and the eye is the last to know. By the time a leaf curls or a corner yellows, the yield decision was made days ago.\n\nWhat satellites and sensors add is time. Stress changes how a crop reflects light before it shows on the ground — often 10 to 15 days earlier. That head start is the whole game.\n\nWe are not here to \"bring tech to the farm\". You know your land. We hand you one more instrument, and you still make the call.\n\nThis is the first of a short series. Next: what farming blind actually costs — with the numbers.\n\nFollow along, and save this for the next person who says the satellite can't tell them anything.",
+  "caption": "This is KurimaSense.\n\nWe sell one thing: the end of farming on guesswork. Satellite field intelligence for Zimbabwean farmers — smallholder and commercial — that tells you what your crop is actually doing, while there is still time to act on it.\n\nHere is the problem we exist for. By the time a leaf curls or a corner yellows, the yield decision has already been made. Guesswork means spreading inputs evenly and hoping, scouting trouble on foot after it shows, and learning the real cost at the weighbridge.\n\nHere is the shift. Satellites read crop stress 10 to 15 days before the eye can. In the app, every field carries one honest number — the KurimaScore, 0 to 100 — refreshed as the satellite passes, with an alert the moment a block starts to slip.\n\nWe are not here to \"bring tech to the farm\". You know your land. We hand you a sharper instrument, and you still make the call.\n\nThis is the first of a short series. Next: what farming blind actually costs — with the numbers.\n\nFollow along, and save this for someone still farming on guesswork.",
   "first_comment": "The 10-to-15-day early-detection window is from a 2025 Frontiers in Plant Science review of crop-stress sensing. We never invent numbers — every figure we post carries its source, and we will always show it.",
   "hashtags": [
     "#ZimAgriculture",
@@ -71,11 +97,11 @@
     "#SmartFarming",
     "#KurimaSense"
   ],
-  "rationale": "Series opener. The hook is the brand thesis in one concrete, second-person line — the satellite sees the sliding corner before you do. The arc earns the positioning: stress shows from above first (sourced early-detection window), the field is never uniform (why an average fails), and an explicit anti-saviour stance that respects the operator (market law). Closes by handing the viewer into the series with a follow/save CTA. 4 of 5 slides teach; product appears only as the frame mark. British spelling, Zimbabwe furniture (blocks, scouting, hectares).",
+  "rationale": "Series opener, rebuilt as an explicit brand introduction: this is KurimaSense, this is the problem, this is what the app does. Arc runs pain (find out too late; one guess for twenty hectares) → benefit (see stress 10–15 days early, sourced) → the product itself (icon-row: reads, alerts, scores) → a follow CTA that hands the viewer into the series. Product is introduced at a high level here; post 3 goes deep on the KurimaScore. The one hard number is sourced; anti-saviour stance kept (market law). British spelling, Zimbabwe furniture (weighbridge, blocks, hectares, scouting).",
   "status": "review",
   "history": [
     {
-      "at": "2026-07-08T13:38:35.782Z",
+      "at": "2026-07-08T16:09:07.170Z",
       "from": "draft",
       "to": "review",
       "by": "machine",
