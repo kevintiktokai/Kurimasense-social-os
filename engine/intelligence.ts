@@ -52,6 +52,14 @@ export function datapoints(): DataPoint[] {
   return dataBank.datapoints;
 }
 
+export function dataBankUpdated(): string {
+  return dataBank.meta.updated;
+}
+
+export function hookBankUpdated(): string {
+  return hookBank.meta.updated;
+}
+
 export function getDatapoint(id: string): DataPoint {
   const d = dataBank.datapoints.find((d: DataPoint) => d.id === id);
   if (!d) throw new Error(`data-bank: unknown datapoint id '${id}'`);

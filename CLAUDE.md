@@ -44,6 +44,10 @@ npm run approve -- <id>          # HUMAN ONLY: review → approved
 npm run reject -- <id> <reason>  # HUMAN ONLY: review → rejected (reason required)
 npm run rework -- <id>           # HUMAN ONLY: rejected → draft for another pass
 npm run pipeline:test   # lifecycle self-test: machine can never approve/publish
+npm run trends      # what's timely: seasonal windows + live sourced topics
+npm run plan        # week plan → plans/<yyyy>-w<ww>.json (next | this | <yyyy>-w<ww>)
+npm run plan:test   # planner self-test: determinism, 80/20 law, shippable-only
+npm run research    # Sunday research checklist (see guidelines/research-routine.md)
 npm run intel       # validate data bank (50+ sourced) + hook bank against laws
 npm run scenes      # list generated background scenes + bake state
 npm run scenes:bake # generate scenes via gpt-image-1 (needs OPENAI_API_KEY)
@@ -125,7 +129,16 @@ content-os/
       audit trail, intelligence gate on shippable hooks + usedIn bookkeeping,
       board (npm run pipeline / board), human commands (approve/reject/rework),
       lifecycle self-test (npm run pipeline:test).
-- [ ] Phase 8 — trend engine + week planner + Sunday research routine
+- [x] Phase 8 — trend engine + week planner + Sunday research routine:
+      intelligence/trends.json (fixed Zimbabwean seasonal calendar + live
+      topics, source + expiry mandatory), engine/trends.ts (ISO-week maths,
+      active windows/topics, integrity in npm run intel), engine/planner.ts
+      (deterministic week plan: 3 posts Mon/Wed/Fri on a 7-show rota with
+      seasonal Season Watch pull + 6 interactive stories with data-bank-fed
+      quiz/poll answers; 80/20 mix enforced by construction), plans/ (proposed
+      slates, committed), guidelines/research-routine.md + npm run research
+      (Sunday checklist: decide → trends → hooks → data → validate → plan),
+      planner self-test (npm run plan:test).
 - [ ] Phase 9 — dashboard (web/, Vercel, Supabase state)
 - [ ] Phase 10 — publishing (Supabase hosting, Buffer queue), repurposing,
       learning report

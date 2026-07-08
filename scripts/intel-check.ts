@@ -1,16 +1,22 @@
 /**
- * intel-check.ts — validates the data bank and hook bank against the laws.
+ * intel-check.ts — validates the data bank, hook bank and trends bank
+ * against the laws.
  *   npm run intel
  * Exits non-zero on any integrity issue.
  */
 import { checkIntegrity, datapoints, hooks, shippableHooks } from "../engine/intelligence.ts";
+import { checkTrendsIntegrity, seasonalWindows, topics } from "../engine/trends.ts";
 
-const issues = checkIntegrity();
+const issues = [
+  ...checkIntegrity(),
+  ...checkTrendsIntegrity().map((i) => ({ kind: "trends", id: i.id, message: i.message })),
+];
 const dp = datapoints();
 const hk = hooks();
 
 console.log(`data bank: ${dp.length} datapoints`);
 console.log(`hook bank: ${hk.length} hooks (${shippableHooks().length} shippable)`);
+console.log(`trends bank: ${seasonalWindows().length} seasonal windows, ${topics().length} topics`);
 
 if (issues.length) {
   for (const i of issues) console.error(`  [${i.kind}] ${i.id}: ${i.message}`);

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "purpose": "What is timely. Two kinds: `seasonal` windows are the fixed Zimbabwean agricultural calendar (Southern-Hemisphere, see guidelines/market.md) and never expire; `topics` are live researched items added by the Sunday research routine. A topic MUST carry a source and an expiry — an unsourced trend is a fabricated trend (Law 5).",
+    "updated": "2026-07-08",
+    "topicShape": {
+      "id": "kebab-case-id",
+      "headline": "one line, in voice",
+      "note": "why it matters to the audience right now",
+      "source": "publication / body, with date",
+      "observed": "YYYY-MM-DD",
+      "expires": "YYYY-MM-DD",
+      "shows": ["Season Watch"],
+      "status": "live | expired"
+    }
+  },
+  "seasonal": [
+    {
+      "id": "land-prep-inputs",
+      "name": "Land prep & input sourcing",
+      "months": [8, 9, 10],
+      "note": "Land preparation, input schemes open, seed and fertiliser decisions made before the rains. The cheapest yield gains of the year happen now.",
+      "shows": ["The Playbook", "Season Watch", "By The Numbers"]
+    },
+    {
+      "id": "first-planting-rains",
+      "name": "First planting rains",
+      "months": [10, 11, 12],
+      "note": "Erratic onset is the biggest gamble in dryland farming. Planting-date decisions, false-start rains, staggered planting.",
+      "shows": ["Season Watch", "The Edge", "Myth vs Method"]
+    },
+    {
+      "id": "green-season-scouting",
+      "name": "Green season scouting & pest pressure",
+      "months": [12, 1, 2],
+      "note": "Weeding, top-dressing, fall armyworm and disease pressure. Scouting workload peaks exactly when labour is scarcest.",
+      "shows": ["The Playbook", "The Edge", "Operator Lens"]
+    },
+    {
+      "id": "midseason-dry-spell",
+      "name": "Mid-season dry spell risk",
+      "months": [1, 2],
+      "note": "January dry spells hit tasselling maize hardest. Moisture stress shows from space before it shows from the road.",
+      "shows": ["Season Watch", "The Edge"]
+    },
+    {
+      "id": "tasselling-grainfill",
+      "name": "Tasselling & grain fill",
+      "months": [1, 2, 3],
+      "note": "Yield is being decided week by week. Stress now is unrecoverable later — the season's sharpest window for acting on evidence.",
+      "shows": ["The Edge", "The Playbook", "Operator Lens"]
+    },
+    {
+      "id": "tobacco-marketing",
+      "name": "Tobacco marketing season",
+      "months": [3, 4, 5, 6, 7],
+      "note": "TIMB floors and contract deliveries. Grading, pricing and side-marketing tension dominate farm cashflow talk.",
+      "shows": ["By The Numbers", "The Proof"]
+    },
+    {
+      "id": "harvest-postharvest",
+      "name": "Harvest & post-harvest handling",
+      "months": [4, 5, 6],
+      "note": "Harvest timing, drying, storage. Post-harvest loss is the most expensive silence in the calendar — the data bank is deep here.",
+      "shows": ["By The Numbers", "The Playbook", "Myth vs Method"]
+    },
+    {
+      "id": "grain-marketing",
+      "name": "Grain marketing & GMB deliveries",
+      "months": [5, 6, 7, 8, 9],
+      "note": "GMB deliveries, private buyers, storage-versus-sell decisions. Margin is made or lost after the crop is already in.",
+      "shows": ["By The Numbers", "The Proof", "Season Watch"]
+    },
+    {
+      "id": "winter-wheat",
+      "name": "Winter wheat under irrigation",
+      "months": [5, 6, 7, 8],
+      "note": "The irrigated winter season: wheat scheduling, water budgets, frost watch. A commercial-and-A2 audience window.",
+      "shows": ["The Edge", "Operator Lens", "Season Watch"]
+    },
+    {
+      "id": "dry-season-review",
+      "name": "Dry season review & next-season planning",
+      "months": [7, 8],
+      "note": "The season post-mortem window: what the field data said, what it cost to ignore, what changes before the next rains.",
+      "shows": ["The Proof", "Myth vs Method", "The Playbook"]
+    },
+    {
+      "id": "lean-season",
+      "name": "Lean season realities",
+      "months": [1, 2, 3],
+      "note": "Household grain runs low before the new harvest. Food-security stakes sharpen every economics message — handle with respect, never as spectacle.",
+      "shows": ["By The Numbers", "Season Watch"]
+    }
+  ],
+  "topics": []
+}

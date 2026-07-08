@@ -1,0 +1,230 @@
+{
+  "id": "2026-w29",
+  "isoYear": 2026,
+  "isoWeek": 29,
+  "weekOf": "2026-07-13",
+  "status": "proposed",
+  "generatedFrom": {
+    "dataBank": "2026-07-07",
+    "hooks": "2026-07-07",
+    "trends": "2026-07-08"
+  },
+  "seasonalContext": [
+    {
+      "id": "tobacco-marketing",
+      "name": "Tobacco marketing season",
+      "note": "TIMB floors and contract deliveries. Grading, pricing and side-marketing tension dominate farm cashflow talk."
+    },
+    {
+      "id": "grain-marketing",
+      "name": "Grain marketing & GMB deliveries",
+      "note": "GMB deliveries, private buyers, storage-versus-sell decisions. Margin is made or lost after the crop is already in."
+    },
+    {
+      "id": "winter-wheat",
+      "name": "Winter wheat under irrigation",
+      "note": "The irrigated winter season: wheat scheduling, water budgets, frost watch. A commercial-and-A2 audience window."
+    },
+    {
+      "id": "dry-season-review",
+      "name": "Dry season review & next-season planning",
+      "note": "The season post-mortem window: what the field data said, what it cost to ignore, what changes before the next rains."
+    }
+  ],
+  "topics": [],
+  "slots": [
+    {
+      "day": "Mon",
+      "date": "2026-07-13",
+      "format": "reel-cover",
+      "show": "Season Watch",
+      "pillar": "ground-truth",
+      "templateDefault": "insight",
+      "job": "timely guidance",
+      "trendAngle": "Grain marketing & GMB deliveries — GMB deliveries, private buyers, storage-versus-sell decisions. Margin is made or lost after the crop is already in. · Winter wheat under irrigation — The irrigated winter season: wheat scheduling, water budgets, frost watch. A commercial-and-A2 audience window.",
+      "hookCandidates": [
+        {
+          "id": "hook-first-rains-confirm",
+          "text": "Before the first rains commit your seed — confirm these three.",
+          "score": 21,
+          "used": false
+        }
+      ],
+      "dataCandidates": [
+        {
+          "id": "zim-cereal-deficit",
+          "value": "≈2.2 million MT annual need",
+          "statement": "Zimbabwe needs about 2.2 million tonnes of cereal a year; 2024 domestic output fell far short, forcing large imports.",
+          "source": "FEWS NET / WFP",
+          "year": 2024,
+          "confidence": "high"
+        },
+        {
+          "id": "zim-drought-foodinsecure",
+          "value": "≈5.3–6 million people",
+          "statement": "More than 5.3 million Zimbabweans were projected to face food insecurity following the 2024 drought.",
+          "source": "World Food Programme",
+          "year": 2024,
+          "confidence": "high"
+        },
+        {
+          "id": "zim-drought-hectares",
+          "value": "900,000+ ha",
+          "statement": "Over 900,000 hectares of maize — half the 1.8 million planted — were devastated by the 2024 drought.",
+          "source": "Government of Zimbabwe (State of Disaster declaration)",
+          "year": 2024,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "day": "Wed",
+      "date": "2026-07-15",
+      "format": "carousel",
+      "show": "The Proof",
+      "pillar": "the-economics",
+      "templateDefault": "comparison",
+      "job": "show the delta",
+      "trendAngle": "Tobacco marketing season — TIMB floors and contract deliveries. Grading, pricing and side-marketing tension dominate farm cashflow talk. · Grain marketing & GMB deliveries — GMB deliveries, private buyers, storage-versus-sell decisions. Margin is made or lost after the crop is already in. · Dry season review & next-season planning — The season post-mortem window: what the field data said, what it cost to ignore, what changes before the next rains.",
+      "hookCandidates": [
+        {
+          "id": "hook-harvest-too-late-audit",
+          "text": "By harvest, the yield you lost was decided *months* ago.",
+          "score": 21,
+          "used": false
+        }
+      ],
+      "dataCandidates": [
+        {
+          "id": "phl-ssa-cereals-share",
+          "value": "≈20.5%",
+          "statement": "About one-fifth of cereals produced in Sub-Saharan Africa is lost between production and consumption.",
+          "source": "FAO, via World Bank 'Missing Food' analysis",
+          "year": 2011,
+          "confidence": "high"
+        },
+        {
+          "id": "phl-ssa-value",
+          "value": "US$4 billion",
+          "statement": "Grain post-harvest losses across Sub-Saharan Africa were valued at around US$4 billion a year — enough to meet the annual food needs of over 40 million people.",
+          "source": "World Bank / FAO / NRI, 'Missing Food'",
+          "year": 2011,
+          "confidence": "high"
+        },
+        {
+          "id": "phl-storage-share",
+          "value": "10–12%",
+          "statement": "Storage and handling losses alone for cereals in Sub-Saharan Africa are estimated at 10–12%.",
+          "source": "APHLIS (African Postharvest Losses Information System)",
+          "year": 2022,
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "day": "Fri",
+      "date": "2026-07-17",
+      "format": "single",
+      "show": "Operator Lens",
+      "pillar": "operator-lens",
+      "templateDefault": "feature",
+      "job": "product-as-method",
+      "trendAngle": "Winter wheat under irrigation — The irrigated winter season: wheat scheduling, water budgets, frost watch. A commercial-and-A2 audience window.",
+      "hookCandidates": [
+        {
+          "id": "hook-one-number-per-field",
+          "text": "One number per field. That's the whole idea.",
+          "score": 20,
+          "used": false
+        }
+      ],
+      "dataCandidates": [
+        {
+          "id": "precision-nitrogen-30",
+          "value": "−30% fertiliser, no yield loss",
+          "statement": "Precision nitrogen management in maize cut fertiliser use by up to 30% with no loss in yield.",
+          "source": "CIMMYT (International Maize and Wheat Improvement Center)",
+          "year": 2020,
+          "confidence": "high"
+        },
+        {
+          "id": "remote-classification-accuracy",
+          "value": "up to ≈98% classification",
+          "statement": "NDVI combined with deep learning has reached crop-health classification accuracy near 98% in recent studies — the analytical layer behind a reliable field score.",
+          "source": "arXiv / ResearchGate, NDVI + neural network crop health classification",
+          "year": 2025,
+          "confidence": "medium"
+        },
+        {
+          "id": "remote-early-detection",
+          "value": "10–15 days earlier",
+          "statement": "Advanced vegetation and stress indices can flag crop stress 10–15 days earlier than conventional visual methods.",
+          "source": "Frontiers in Plant Science (hyperspectral stress detection framework)",
+          "year": 2025,
+          "confidence": "medium"
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "day": "Mon",
+      "date": "2026-07-13",
+      "type": "AMA",
+      "note": "Field questions AMA — mine replies for next week's hooks."
+    },
+    {
+      "day": "Tue",
+      "date": "2026-07-14",
+      "type": "this-or-that",
+      "note": "Interactive sticker; answers sourced, never invented."
+    },
+    {
+      "day": "Wed",
+      "date": "2026-07-15",
+      "type": "behind-the-method",
+      "note": "Show the working: how a satellite read becomes a farm decision."
+    },
+    {
+      "day": "Thu",
+      "date": "2026-07-16",
+      "type": "poll",
+      "note": "Interactive sticker; answers sourced, never invented.",
+      "dataCandidate": {
+        "id": "precision-nitrogen-30",
+        "value": "−30% fertiliser, no yield loss",
+        "statement": "Precision nitrogen management in maize cut fertiliser use by up to 30% with no loss in yield.",
+        "source": "CIMMYT (International Maize and Wheat Improvement Center)",
+        "year": 2020
+      }
+    },
+    {
+      "day": "Fri",
+      "date": "2026-07-17",
+      "type": "quiz",
+      "note": "Interactive sticker; answers sourced, never invented.",
+      "dataCandidate": {
+        "id": "ssa-farm-size",
+        "value": "1–2 ha typical",
+        "statement": "The median crop farm across most of Sub-Saharan Africa is between one and two hectares.",
+        "source": "FAO subnational farm-size analysis / The Lancet Planetary Health",
+        "year": 2021
+      }
+    },
+    {
+      "day": "Sat",
+      "date": "2026-07-18",
+      "type": "slider",
+      "note": "Interactive sticker; answers sourced, never invented."
+    }
+  ],
+  "mix": {
+    "posts": 3,
+    "productPosts": 1,
+    "stories": 6,
+    "productShare": 0.111,
+    "lawMax": 0.2,
+    "ok": true
+  },
+  "next": "Author a brief per slot (briefs/<plan-id>-<slug>.json, status draft), then npm run pipeline. Every brief still passes the QA gate and the human decides."
+}
