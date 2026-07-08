@@ -1,0 +1,111 @@
+{
+  "id": "intro-02-cost-of-guessing",
+  "created": "2026-07-08",
+  "pillar": "the-economics",
+  "show": "By The Numbers",
+  "hook": "hook-20pc-never-plate",
+  "format": "carousel",
+  "slides": [
+    {
+      "template": "cover",
+      "params": {
+        "photo": "ox-plough-storm",
+        "title": "About *One In Five* Cereals Grown Here Never Reaches A Plate.",
+        "kicker": "The maths of farming blind — and what evidence buys back.",
+        "slideNo": "SLIDE 01"
+      },
+      "alt_text": "A farmer ploughs red soil with two white oxen under a storm-lit sky. Large yellow serif text reads: about one in five cereals grown here never reaches a plate."
+    },
+    {
+      "template": "case-study",
+      "params": {
+        "photo": "ox-plough-storm",
+        "eyebrow": "The loss, sourced",
+        "title": "What Guessing Costs The Region.",
+        "stats": [
+          {
+            "value": "≈20%",
+            "label": "of cereals grown in Sub-Saharan Africa are lost between field and plate"
+          },
+          {
+            "value": "US$4bn",
+            "label": "estimated value of the region's post-harvest losses each year"
+          }
+        ],
+        "source": "FAO / World Bank 'Missing Food', 2011",
+        "slideNo": "SLIDE 02"
+      },
+      "alt_text": "A farmer ploughing with oxen at dusk. Two large statistics: about 20 percent of cereals in Sub-Saharan Africa are lost between field and plate, worth an estimated 4 billion US dollars a year. Source FAO and World Bank Missing Food, 2011."
+    },
+    {
+      "template": "insight",
+      "params": {
+        "photo": "tractor-maize",
+        "eyebrow": "The other side of the ledger",
+        "title": "Evidence Buys\nSome Of It Back.",
+        "body": "Placing inputs where the field actually needs them is not a saving on the margins.\n\nIn trials, precision nitrogen management cut fertiliser use by *up to 30%* with no loss in yield — the same crop, for less money down.",
+        "slideNo": "SLIDE 03"
+      },
+      "alt_text": "A green tractor beside a tall maize stand. Text reads: evidence buys some of it back. Precision nitrogen management cut fertiliser use by up to 30 percent with no loss in yield."
+    },
+    {
+      "template": "comparison",
+      "params": {
+        "photo": "ox-plough-storm",
+        "title": "Two Ways To Farm The Same Field.",
+        "bad": {
+          "label": "Farming blind",
+          "items": [
+            "Inputs spread evenly, hoping",
+            "Trouble found on foot, after it shows",
+            "One number for twenty hectares",
+            "Losses noticed at the weighbridge"
+          ]
+        },
+        "good": {
+          "label": "Reading the field",
+          "items": [
+            "Inputs placed where the field asks for them",
+            "The sliding corner flagged early",
+            "Every block read on its own terms",
+            "The decision made while it still counts"
+          ]
+        },
+        "slideNo": "SLIDE 04"
+      },
+      "alt_text": "A farmer ploughing with oxen at dusk. A two-column comparison. Farming blind: inputs spread evenly, trouble found late, one number for twenty hectares, losses noticed at the weighbridge. Reading the field: inputs placed where needed, the sliding corner flagged early, every block read on its own terms, the decision made while it still counts."
+    },
+    {
+      "template": "question",
+      "params": {
+        "photo": "farmer-portrait",
+        "question": "What would a *fifth* of your harvest, back in the barn, change?",
+        "cta": "SAVE THIS — SEND IT TO WHOEVER SIGNS OFF THE INPUT BUDGET",
+        "slideNo": "SLIDE 05"
+      },
+      "alt_text": "A young woman farmer in a straw hat leans on a wooden rail. Text asks: what would a fifth of your harvest, back in the barn, change? A yellow banner says save this and send it to whoever signs off the input budget."
+    }
+  ],
+  "caption": "Farming blind has a price, and it is not small.\n\nAcross Sub-Saharan Africa, roughly one in five cereals grown never makes it from the field to a plate — an estimated US$4 billion lost every year (FAO / World Bank, 'Missing Food', 2011). That is not one bad season. That is the baseline.\n\nThe encouraging half of the ledger: much of the waste is a decision problem, not a weather problem. Place inputs where the field actually needs them and the maths shifts fast — precision nitrogen trials cut fertiliser use by up to 30% with no loss in yield (CIMMYT, 2020). Same crop. Less money down.\n\nThat is the case for reading the field instead of guessing at it. Not a gadget — a cheaper, sharper way to spend what you were going to spend anyway.\n\nSave this for your next input-budget conversation.",
+  "first_comment": "Sources: the ~20% cereal loss share and the US$4bn annual figure are FAO / World Bank 'Missing Food' (2011); the 30% precision-nitrogen saving is CIMMYT (2020). Every number we post lives in our data bank with its source and year — we never invent stats.",
+  "hashtags": [
+    "#ZimAgriculture",
+    "#FarmingZimbabwe",
+    "#PostHarvestLoss",
+    "#PrecisionAgriculture",
+    "#AgriTechAfrica",
+    "#FarmEconomics",
+    "#KurimaSense"
+  ],
+  "rationale": "The stakes post of the series. Hook states a sourced, felt loss in plain terms (one in five, never reaches a plate). Arc: quantify the loss with two sourced stats, then flip to what evidence recovers (sourced 30% input saving), then a blind-vs-reading comparison that frames precision as a spending decision rather than a gadget, closing on a save/send CTA aimed at the budget holder. Every stat carries a data-bank source; no fabricated results. British spelling, USD, Zimbabwe furniture (weighbridge, blocks, hectares, input budget).",
+  "status": "review",
+  "history": [
+    {
+      "at": "2026-07-08T13:36:23.868Z",
+      "from": "draft",
+      "to": "review",
+      "by": "machine",
+      "reason": "QA green"
+    }
+  ]
+}

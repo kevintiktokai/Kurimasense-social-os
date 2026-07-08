@@ -1,0 +1,95 @@
+{
+  "id": "intro-03-the-kurimascore",
+  "created": "2026-07-08",
+  "pillar": "operator-lens",
+  "show": "Operator Lens",
+  "hook": "hook-one-number-per-field",
+  "format": "carousel",
+  "slides": [
+    {
+      "template": "cover",
+      "params": {
+        "photo": "tractor-maize",
+        "title": "One Number Per Field. *That's* The Whole Idea.",
+        "kicker": "Meet the KurimaScore — the instrument the last two posts were building towards.",
+        "slideNo": "SLIDE 01"
+      },
+      "alt_text": "A green tractor beside a tall maize stand under a brooding sky. Large yellow serif text reads: one number per field. That's the whole idea."
+    },
+    {
+      "template": "feature",
+      "params": {
+        "photo": "greenhouse-tomatoes",
+        "eyebrow": "The KurimaScore",
+        "title": "Your Field, In One Read.",
+        "body": "One score from 0 to 100, refreshed as the satellite passes. Not a grade — a prompt to look in the right place.",
+        "ui": {
+          "field": "Block 4 · Maize · 12.4 ha",
+          "score": "72",
+          "band": "HOLDING — NORTH EDGE SLIPPING",
+          "action": "Scout the north edge before you irrigate the whole block."
+        },
+        "slideNo": "SLIDE 02"
+      },
+      "alt_text": "Tomato rows inside a tunnel greenhouse. A dark panel shows a KurimaScore readout: Block 4, maize, 12.4 hectares. Score 72, band reads holding, north edge slipping. Action: scout the north edge before you irrigate the whole block."
+    },
+    {
+      "template": "icon-row",
+      "params": {
+        "photo": "tractor-maize",
+        "title": "What The Number Folds In.",
+        "items": [
+          {
+            "icon": "drop",
+            "label": "Water",
+            "text": "Canopy stress and moisture, read before the wilt."
+          },
+          {
+            "icon": "leaf",
+            "label": "Vigour",
+            "text": "Whether the crop is still climbing, week on week."
+          },
+          {
+            "icon": "chart",
+            "label": "Variation",
+            "text": "Which corner is sliding while the rest holds."
+          }
+        ],
+        "slideNo": "SLIDE 03"
+      },
+      "alt_text": "A green tractor beside a maize stand. Three columns explain what the KurimaScore folds in: water, canopy stress and moisture read before the wilt; vigour, whether the crop is still climbing week on week; variation, which corner is sliding while the rest holds."
+    },
+    {
+      "template": "question",
+      "params": {
+        "photo": "farmer-portrait",
+        "question": "If every field had *one* honest number this week — which would you check first?",
+        "cta": "FOLLOW KURIMASENSE — SCORES FOR YOUR FIELDS ARE COMING",
+        "slideNo": "SLIDE 04"
+      },
+      "alt_text": "A young woman farmer in a straw hat leans on a wooden rail, looking ahead. Text asks: if every field had one honest number this week, which would you check first? A yellow banner says follow KurimaSense, scores for your fields are coming."
+    }
+  ],
+  "caption": "We spent two posts on the problem. Here is the instrument.\n\nThe KurimaScore is one number per field, 0 to 100, refreshed as the satellite passes overhead. It is not a grade on your farming — it is a prompt that tells you where to point your attention this week.\n\nUnder that one number sits the work the eye can't do quickly: canopy stress and moisture, whether vigour is still climbing, and which corner of the block is sliding while the rest holds. You get the read; you make the call.\n\nThat is the whole design philosophy. Not a dashboard you have to babysit. One honest number per field, early enough to matter.\n\nFollow along — scores for your own fields are coming. Save this for the person who runs the fields with you.",
+  "first_comment": "The KurimaScore is a composite read of publicly-sourced satellite signals — canopy temperature, vegetation vigour and within-field variation. The example readout here is illustrative, not a real client field: we never fabricate customer results. When we show a real score, it will be labelled as one.",
+  "hashtags": [
+    "#ZimAgriculture",
+    "#FarmingZimbabwe",
+    "#PrecisionAgriculture",
+    "#KurimaScore",
+    "#AgriTechAfrica",
+    "#SmartFarming",
+    "#KurimaSense"
+  ],
+  "rationale": "The payoff post — the only product-led brief in the series (Operator Lens, the 20%). It earns the product mention because the two prior posts taught the problem. Hook is the product's design philosophy in one line. Arc: introduce the score, show a concrete but explicitly illustrative readout (feature UI), unpack the three signals it folds in (icon-row ties back to posts 1–2), and close on a save/follow CTA. First comment labels the example as illustrative, not a client result (compliance: no fabricated clients). British spelling, Zimbabwe furniture (blocks, hectares, irrigate, scouting).",
+  "status": "review",
+  "history": [
+    {
+      "at": "2026-07-08T13:36:41.471Z",
+      "from": "draft",
+      "to": "review",
+      "by": "machine",
+      "reason": "QA green"
+    }
+  ]
+}

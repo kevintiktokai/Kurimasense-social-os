@@ -1,0 +1,85 @@
+{
+  "id": "intro-01-end-of-guesswork",
+  "created": "2026-07-08",
+  "pillar": "field-intelligence",
+  "show": "The Edge",
+  "hook": "hook-satellite-sees-first",
+  "format": "carousel",
+  "slides": [
+    {
+      "template": "cover",
+      "params": {
+        "photo": "ox-plough-storm",
+        "title": "The Satellite Sees The Corner Sliding *A Week* Before You Walk Past It.",
+        "kicker": "Field intelligence for Zimbabwean farmers. The start of the end of farming on guesswork.",
+        "slideNo": "SLIDE 01"
+      },
+      "alt_text": "A farmer ploughs red soil with two white oxen under a storm-lit sky. Large yellow serif text reads: The satellite sees the corner sliding a week before you walk past it."
+    },
+    {
+      "template": "insight",
+      "params": {
+        "photo": "tractor-maize",
+        "eyebrow": "What the eye misses",
+        "title": "Stress Shows\nFrom Above First.",
+        "body": "A struggling crop changes how it reflects and radiates light long before a leaf ever curls.\n\nSatellite and sensor reads can flag that shift *10 to 15 days* before the symptom reaches your eye — while there is still a decision worth making.",
+        "slideNo": "SLIDE 02"
+      },
+      "alt_text": "A green tractor beside a tall maize stand under a brooding sky. Text reads: stress shows from above first. A struggling crop changes how it reflects light 10 to 15 days before a leaf curls."
+    },
+    {
+      "template": "insight",
+      "params": {
+        "photo": "greenhouse-tomatoes",
+        "eyebrow": "Why one number won't do",
+        "title": "The Field Is\nNever Uniform.",
+        "body": "One block is holding. The corner by the road is already sliding. The average hides both.\n\nField intelligence reads the *variation* — so you scout the hotspot and leave the rest of the hectares alone.",
+        "slideNo": "SLIDE 03"
+      },
+      "alt_text": "Tomato rows inside a tunnel greenhouse. Text reads: the field is never uniform. Field intelligence reads the variation so you scout the hotspot, not every hectare."
+    },
+    {
+      "template": "insight",
+      "params": {
+        "photo": "hoe-wetland",
+        "eyebrow": "How we see it",
+        "title": "A Sharper Instrument.\nNot A Saviour.",
+        "body": "You already know your land. KurimaSense hands you one more instrument — evidence, early enough to act on.\n\nYou still make the call.",
+        "slideNo": "SLIDE 04"
+      },
+      "alt_text": "A farmer swings a hoe over wet ground, reflected in the water. Text reads: a sharper instrument, not a saviour. KurimaSense hands you evidence early enough to act on. You still make the call."
+    },
+    {
+      "template": "question",
+      "params": {
+        "photo": "farmer-portrait",
+        "question": "How many times has a field told you *too late*?",
+        "cta": "FOLLOW FOR THE SERIES — WE START WITH THE STAKES",
+        "slideNo": "SLIDE 05"
+      },
+      "alt_text": "A young woman farmer in a straw hat leans on a wooden rail, looking ahead. Text asks: how many times has a field told you too late? A yellow banner says follow for the series, we start with the stakes."
+    }
+  ],
+  "caption": "This is KurimaSense. Field intelligence for the way farming actually works in Zimbabwe.\n\nEvery season carries the same quiet risk: the field is already in trouble, and the eye is the last to know. By the time a leaf curls or a corner yellows, the yield decision was made days ago.\n\nWhat satellites and sensors add is time. Stress changes how a crop reflects light before it shows on the ground — often 10 to 15 days earlier. That head start is the whole game.\n\nWe are not here to \"bring tech to the farm\". You know your land. We hand you one more instrument, and you still make the call.\n\nThis is the first of a short series. Next: what farming blind actually costs — with the numbers.\n\nFollow along, and save this for the next person who says the satellite can't tell them anything.",
+  "first_comment": "The 10-to-15-day early-detection window is from a 2025 Frontiers in Plant Science review of crop-stress sensing. We never invent numbers — every figure we post carries its source, and we will always show it.",
+  "hashtags": [
+    "#ZimAgriculture",
+    "#FarmingZimbabwe",
+    "#PrecisionAgriculture",
+    "#MaizeFarming",
+    "#AgriTechAfrica",
+    "#SmartFarming",
+    "#KurimaSense"
+  ],
+  "rationale": "Series opener. The hook is the brand thesis in one concrete, second-person line — the satellite sees the sliding corner before you do. The arc earns the positioning: stress shows from above first (sourced early-detection window), the field is never uniform (why an average fails), and an explicit anti-saviour stance that respects the operator (market law). Closes by handing the viewer into the series with a follow/save CTA. 4 of 5 slides teach; product appears only as the frame mark. British spelling, Zimbabwe furniture (blocks, scouting, hectares).",
+  "status": "review",
+  "history": [
+    {
+      "at": "2026-07-08T13:38:35.782Z",
+      "from": "draft",
+      "to": "review",
+      "by": "machine",
+      "reason": "QA green"
+    }
+  ]
+}
