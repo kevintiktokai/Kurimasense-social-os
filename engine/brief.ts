@@ -24,11 +24,21 @@ export interface BriefSlide {
   alt_text: string;
 }
 
+/** One lifecycle move, appended by the pipeline — the brief carries its own audit trail. */
+export interface Transition {
+  at: string;
+  from: Brief["status"];
+  to: Brief["status"];
+  by: "machine" | "human";
+  reason?: string;
+}
+
 export interface Brief {
   id: string;
   created: string;
   pillar: string;
   show: string;
+  /** id of a hook in intelligence/hooks.json — the pipeline enforces it is live and shippable */
   hook: string;
   format: "carousel" | "reel-cover";
   slides: BriefSlide[];
@@ -37,6 +47,7 @@ export interface Brief {
   hashtags: string[];
   rationale: string;
   status: "draft" | "review" | "approved" | "rejected" | "published";
+  history?: Transition[];
 }
 
 export function loadBrief(id: string): Brief {

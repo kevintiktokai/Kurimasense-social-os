@@ -38,6 +38,12 @@ npm run typecheck   # tsc --noEmit (must be clean before any phase is done)
 npm run templates   # render all archetype samples → outputs/_templates/
 npm run qa          # QA self-test: 10 samples must PASS, bad fixture must FAIL
 npm run brief -- <id>   # render briefs/<id>.json → outputs/<id>/ review bundle
+npm run pipeline    # all draft briefs → intelligence gate → QA render → review, then board
+npm run board       # status board of every brief, no rendering
+npm run approve -- <id>          # HUMAN ONLY: review → approved
+npm run reject -- <id> <reason>  # HUMAN ONLY: review → rejected (reason required)
+npm run rework -- <id>           # HUMAN ONLY: rejected → draft for another pass
+npm run pipeline:test   # lifecycle self-test: machine can never approve/publish
 npm run intel       # validate data bank (50+ sourced) + hook bank against laws
 npm run scenes      # list generated background scenes + bake state
 npm run scenes:bake # generate scenes via gpt-image-1 (needs OPENAI_API_KEY)
@@ -46,9 +52,14 @@ npm run images      # render sample slides on generated scenes (preview)
 
 ## The loop (so far)
 
-brief json → render each slide → hard QA gate (engine/qa.ts) → review
-bundle (PNGs + caption.md + alt.txt + why.md + qa-report.json) → status
-draft→review → STOP. Approval is human-only; nothing publishes itself.
+brief json (status draft) → `npm run pipeline` → intelligence gate (hook must
+be a live, shippable id in intelligence/hooks.json) → render each slide →
+hard QA gate (engine/qa.ts) → review bundle (PNGs + caption.md + alt.txt +
+why.md + qa-report.json) → status review → STOP. The human decides with
+`npm run approve|reject|rework -- <id>`; every transition is appended to the
+brief's `history`. Approved briefs wait for Phase 10 — the machine can never
+approve or publish (enforced in engine/pipeline.ts, proven by
+`npm run pipeline:test`).
 
 ## Visual system (derived from reference/)
 
@@ -108,7 +119,12 @@ content-os/
       key, brand-safety lint), scenes resolve through photo.ts exactly like
       library photos. Preview: npm run images. Bake: npm run scenes:bake
       (needs OPENAI_API_KEY in .env).
-- [ ] Phase 7 — pipeline with human gate
+- [x] Phase 7 — pipeline with human gate: engine/pipeline.ts lifecycle state
+      machine (draft→review machine-only-via-green-QA; review→approved/rejected
+      human-only; publish hard-blocked until Phase 10), per-brief `history`
+      audit trail, intelligence gate on shippable hooks + usedIn bookkeeping,
+      board (npm run pipeline / board), human commands (approve/reject/rework),
+      lifecycle self-test (npm run pipeline:test).
 - [ ] Phase 8 — trend engine + week planner + Sunday research routine
 - [ ] Phase 9 — dashboard (web/, Vercel, Supabase state)
 - [ ] Phase 10 — publishing (Supabase hosting, Buffer queue), repurposing,

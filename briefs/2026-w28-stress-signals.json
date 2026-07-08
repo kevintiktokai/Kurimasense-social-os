@@ -3,7 +3,7 @@
   "created": "2026-07-07",
   "pillar": "field-intelligence",
   "show": "The Playbook",
-  "hook": "your-field-tells-you-too-late",
+  "hook": "hook-thirsty-two-weeks",
   "format": "carousel",
   "slides": [
     {
@@ -93,5 +93,14 @@
     "#KurimaSense"
   ],
   "rationale": "Hook names a felt pain (finding out too late) with a concrete time cost (two weeks), in second person, no product mention until the profile. The arc teaches three checkable signals (value first), lands one sourced cost statistic for stakes, and closes on a question CTA engineered for saves and sends to an agronomist — the highest-trust referral path in Zimbabwean farming. 5 of 6 slides teach; product appears only as the frame mark. British spelling, USD figures, Zimbabwe furniture (blocks, scouting, tasselling).",
-  "status": "review"
+  "status": "review",
+  "history": [
+    {
+      "at": "2026-07-08T00:08:53.095Z",
+      "from": "draft",
+      "to": "review",
+      "by": "machine",
+      "reason": "QA green"
+    }
+  ]
 }

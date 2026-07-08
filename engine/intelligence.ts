@@ -6,7 +6,7 @@
  * - Every hook that ships must score >= the ship threshold.
  * - `context`-confidence datapoints may never be used as a headline stat.
  */
-import { readFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -83,6 +83,27 @@ export function assertHeadlineUsable(id: string): DataPoint {
     );
   }
   return d;
+}
+
+/** A brief may only ship on a live hook at or above the ship threshold. */
+export function assertShippable(id: string): Hook {
+  const h = getHook(id);
+  if (h.status !== "live") {
+    throw new Error(`hooks: '${id}' is ${h.status}, not live — it may not ship`);
+  }
+  if (h.score < SHIP_THRESHOLD) {
+    throw new Error(`hooks: '${id}' scores ${h.score} < ship threshold ${SHIP_THRESHOLD}`);
+  }
+  return h;
+}
+
+/** Record that a brief shipped on a hook (living bank: usedIn feeds re-scoring). */
+export function markHookUsed(hookId: string, briefId: string): void {
+  const h = getHook(hookId);
+  if (h.usedIn.includes(briefId)) return;
+  h.usedIn.push(briefId);
+  hookBank.meta.updated = new Date().toISOString().slice(0, 10);
+  writeFileSync(join(root, "intelligence", "hooks.json"), JSON.stringify(hookBank, null, 2) + "\n");
 }
 
 /** Recompute a hook's score from its axes. */
