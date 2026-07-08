@@ -25,6 +25,12 @@ briefs, slides, captions) consumes the banks, never the open web. Run
    Retire hooks that flopped (`status: "retired"` — never delete). Write new
    candidates for any show `npm run research` flags as dry; score them against
    `guidelines/hook-archetypes.md`; nothing goes `live` under the ship threshold.
+   **Seed numbers:** a `performance.seed: true` block holds placeholder launch
+   figures, not measured ones. They exist only to prime the loop before a post
+   has real data. On the first Sunday after the post is live, replace them with
+   the real metrics, clear the `seed` flag, then re-score. Seed numbers never
+   re-score a hook and never count as "real or absent" — the flag is what keeps
+   the bank honest.
 
 4. **Data bank.** Add datapoints the week's research surfaced — value,
    statement, source, year, confidence. Never trim below 50. A stat without a

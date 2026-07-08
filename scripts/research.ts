@@ -37,7 +37,14 @@ console.log("   research fresh topics per guidelines/research-routine.md; every 
 // 3. Hooks: shipped ones need real numbers; shows running dry need writing.
 const unscored = hooks().filter((h) => h.usedIn.length > 0 && h.performance.rescored === null);
 console.log(`\n3. HOOKS`);
-for (const h of unscored) console.log(`   collect saves/shares/sends for '${h.id}' (shipped in ${h.usedIn.join(", ")}) and rescore`);
+for (const h of unscored) {
+  const seeded = h.performance.seed === true;
+  console.log(
+    seeded
+      ? `   replace SEED numbers on '${h.id}' (shipped in ${h.usedIn.join(", ")}) with real saves/shares/sends, clear the seed flag, then rescore`
+      : `   collect saves/shares/sends for '${h.id}' (shipped in ${h.usedIn.join(", ")}) and rescore`,
+  );
+}
 const SHOW_NAMES = ["The Playbook", "The Edge", "By The Numbers", "The Proof", "Myth vs Method", "Season Watch", "Operator Lens"];
 for (const show of SHOW_NAMES) {
   const fresh = shippableHooks().filter((h) => h.show === show && h.usedIn.length === 0).length;

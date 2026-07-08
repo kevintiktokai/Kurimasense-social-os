@@ -14,7 +14,8 @@
       "draft",
       "live",
       "retired"
-    ]
+    ],
+    "seedNote": "performance.seed=true marks placeholder launch numbers for the intro series, tagged so the bank never treats them as measured. Real saves/shares/sends replace them (and clear the flag) on the first Sunday after each post is live; seed numbers never re-score a hook."
   },
   "hooks": [
     {
@@ -108,10 +109,11 @@
         "intro-02-cost-of-guessing"
       ],
       "performance": {
-        "saves": null,
-        "shares": null,
-        "sends": null,
-        "rescored": null
+        "saves": 72,
+        "shares": 18,
+        "sends": 24,
+        "rescored": null,
+        "seed": true
       }
     },
     {
@@ -165,7 +167,7 @@
     },
     {
       "id": "hook-green-can-lie",
-      "text": "\"Green means healthy.\" Not always — and here's when it lies.",
+      "text": "\"Green means healthy.\" Not always \u2014 and here's when it lies.",
       "archetype": "myth-bust",
       "pillar": "ground-truth",
       "show": "Myth vs Method",
@@ -188,7 +190,7 @@
     },
     {
       "id": "hook-first-rains-confirm",
-      "text": "Before the first rains commit your seed — confirm these three.",
+      "text": "Before the first rains commit your seed \u2014 confirm these three.",
       "archetype": "season-timely",
       "pillar": "ground-truth",
       "show": "Season Watch",
@@ -228,10 +230,11 @@
         "intro-03-the-kurimascore"
       ],
       "performance": {
-        "saves": null,
-        "shares": null,
-        "sends": null,
-        "rescored": null
+        "saves": 38,
+        "shares": 7,
+        "sends": 12,
+        "rescored": null,
+        "seed": true
       }
     },
     {
@@ -277,10 +280,11 @@
         "intro-01-end-of-guesswork"
       ],
       "performance": {
-        "saves": null,
-        "shares": null,
-        "sends": null,
-        "rescored": null
+        "saves": 46,
+        "shares": 11,
+        "sends": 15,
+        "rescored": null,
+        "seed": true
       }
     },
     {

@@ -40,6 +40,8 @@ export interface Hook {
     shares: number | null;
     sends: number | null;
     rescored: string | null;
+    /** true = placeholder launch numbers, not organically measured. Replaced by real metrics on the first Sunday after the post is live; never used to re-score. */
+    seed?: boolean;
   };
 }
 
