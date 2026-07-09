@@ -82,7 +82,7 @@
     "#KurimaSense"
   ],
   "rationale": "The payoff post — the only product-led brief in the series (Operator Lens, the 20%). It earns the product mention because the two prior posts taught the problem. Hook is the product's design philosophy in one line. Arc: introduce the score, show a concrete but explicitly illustrative readout (feature UI), unpack the three signals it folds in (icon-row ties back to posts 1–2), and close on a save/follow CTA. First comment labels the example as illustrative, not a client result (compliance: no fabricated clients). British spelling, Zimbabwe furniture (blocks, hectares, irrigate, scouting).",
-  "status": "review",
+  "status": "approved",
   "history": [
     {
       "at": "2026-07-08T13:36:41.471Z",
@@ -90,6 +90,12 @@
       "to": "review",
       "by": "machine",
       "reason": "QA green"
+    },
+    {
+      "at": "2026-07-09T05:54:17.285Z",
+      "from": "review",
+      "to": "approved",
+      "by": "human"
     }
   ]
 }

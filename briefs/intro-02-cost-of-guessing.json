@@ -98,7 +98,7 @@
     "#KurimaSense"
   ],
   "rationale": "The stakes post of the series. Hook states a sourced, felt loss in plain terms (one in five, never reaches a plate). Arc: quantify the loss with two sourced stats, then flip to what evidence recovers (sourced 30% input saving), then a blind-vs-reading comparison that frames precision as a spending decision rather than a gadget, closing on a save/send CTA aimed at the budget holder. Every stat carries a data-bank source; no fabricated results. British spelling, USD, Zimbabwe furniture (weighbridge, blocks, hectares, input budget).",
-  "status": "review",
+  "status": "approved",
   "history": [
     {
       "at": "2026-07-08T13:36:23.868Z",
@@ -106,6 +106,12 @@
       "to": "review",
       "by": "machine",
       "reason": "QA green"
+    },
+    {
+      "at": "2026-07-09T05:54:15.974Z",
+      "from": "review",
+      "to": "approved",
+      "by": "human"
     }
   ]
 }

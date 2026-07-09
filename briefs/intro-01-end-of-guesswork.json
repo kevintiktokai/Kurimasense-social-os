@@ -98,7 +98,7 @@
     "#KurimaSense"
   ],
   "rationale": "Series opener, rebuilt as an explicit brand introduction: this is KurimaSense, this is the problem, this is what the app does. Arc runs pain (find out too late; one guess for twenty hectares) → benefit (see stress 10–15 days early, sourced) → the product itself (icon-row: reads, alerts, scores) → a follow CTA that hands the viewer into the series. Product is introduced at a high level here; post 3 goes deep on the KurimaScore. The one hard number is sourced; anti-saviour stance kept (market law). British spelling, Zimbabwe furniture (weighbridge, blocks, hectares, scouting).",
-  "status": "review",
+  "status": "approved",
   "history": [
     {
       "at": "2026-07-08T16:09:07.170Z",
@@ -106,6 +106,12 @@
       "to": "review",
       "by": "machine",
       "reason": "QA green"
+    },
+    {
+      "at": "2026-07-09T05:54:14.611Z",
+      "from": "review",
+      "to": "approved",
+      "by": "human"
     }
   ]
 }
